@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index</title>
+  <link rel="stylesheet" href="/static/css/reset.css">
+  <link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/jquery.fatNav.min.css">
+  <link rel="stylesheet" href="/static/css/animate.css">
+  <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+  <header>
+    <div class="fat-nav">
+        <div class="fat-nav__wrapper">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">咨询专家</a></li>
+                <li><a href="#">文化介绍</a></li>
+                <li><a href="#">联系方式</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header_cover animated fadeInLeft">
+      <div class="cover_end">
+        <div class="cover_end_first"></div>
+        <div class="cover_end_second"></div>
+      </div>
+      <div class="cover_front">
+        <div class="cover_front_first"></div>
+        <div class="cover_front_second"></div>
+      </div>
+      <div class="cover_top animated fadeInLeft">
+        <div class="logo">
+          <a href="#">
+            <img src="/static/imgs/logo2.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="cover_bottom animated fadeInLeft">
+        <div class="video_desc">
+          视频简介： <br>
+          这是视频区域
+          专门放视频的啊
+        </div>
+      </div>
+    </div>
+    <div class="video_place">
+        <video  id="my-video" class="video-js" controls preload="auto" data-setup="{}"  poster="/static/imgs/background.jpg">
+          <source src="/static/video/ow.mp4" type='video/mp4'>
+        </video>
+    </div>
+  </header>
+  <main>
+    <div class="card_place about_card">
+      <div class="card_place_title"><span>关于我们的项目</span></div>
+      <div class="card australia_card animated fadeInLeft wow">
+        <a href="#">
+          <div class="card_cover">
+            <p>
+              <span>澳大利亚</span><br>
+              <span>Australia</span>
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="card newzeland_card animated zoomIn wow">
+        <a href="#">
+          <div class="card_cover">
+            <p>
+              <span>新西兰</span><br>
+              <span>New Zeland</span>
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="card canada_card animated fadeInRight wow">
+        <a href="#">
+          <div class="card_cover">
+            <p>
+              <span>加拿大</span><br>
+              <span>Canada</span>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="card_place tradition_card">
+      <div class="card_place_title"><span>风土人情</span></div>
+      <div class="card australia_card animated fadeInLeft wow">
+        <a href="#">
+          <div class="card_cover">
+            <p>
+              <span>澳大利亚</span><br>
+              <span>Australia</span>
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="card newzeland_card animated zoomIn wow">
+        <a href="#">
+          <div class="card_cover">
+            <p>
+              <span>新西兰</span><br>
+              <span>New Zeland</span>
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="card canada_card animated fadeInRight wow">
+        <a href="#">
+          <div class="card_cover">
+            <p>
+              <span>加拿大</span><br>
+              <span>Canada</span>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="card_place route_card">
+      <div class="card_place_title"><span>旅游路线</span></div>
+      <div class="card australia_card animated fadeInLeft wow">
+        <a href="#">
+          <div class="card_cover">
+            <p>
+              <span>澳大利亚</span><br>
+              <span>Australia</span>
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="card newzeland_card animated zoomIn wow">
+        <a href="#">
+          <div class="card_cover">
+            <p>
+              <span>新西兰</span><br>
+              <span>New Zeland</span>
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="card canada_card animated fadeInRight wow">
+        <a href="#">
+          <div class="card_cover">
+            <p>
+              <span>加拿大</span><br>
+              <span>Canada</span>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="map_place">
+      <img src="/static/imgs/map.png">
+    </div>
+  </main>
+  <footer>
+    <div class="contact">
+      <div class="contact_content">
+        <p>CONTACT</p>
+        <p>TEL: 400-619-7935</p>
+        <p>EMAIL: newsight@newsightgreaterchina.com</p>
+      </div>
+    </div>
+    <div class="copyright"></div>
+  </footer>
+</body>
+<script src="/static/js/jquery-1.11.3.min.js" charset="utf-8"></script>
+<script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+<script src="/static/js/wow.js"></script>
+<script src="/static/js/jquery.fatNav.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    new WOW().init();
+    $.fatNav();
+    $(".contact").hide();
+    $(document).scroll(function(){
+        now = $(document).scrollTop();
+        if(now > 600){
+          $(".contact").show();
+        }
+        else{
+          $(".contact").hide();
+        }
+    });
+    var player = videojs('my-video');
+    player.on('play', function(){
+      $(".header_cover").hide();
+      $(".vjs-big-play-button").css("display", "none");
+    });
+    player.on('pause', function(){
+      $(".header_cover").show();
+      $(".vjs-big-play-button").css("display", "block");
+    });
+
+    $(".card").hover(function(){
+
+      if($(this).hasClass("pulse")){
+        $(this).removeClass("pulse");
+        $(this).css("animation-name", "none");
+
+      }
+      else{
+        $(this).css("animation-name", "pulse");
+        $(this).addClass("pulse animated");
+      }
+    });
+    $(".cover_top").hide();
+    $(".cover_bottom").hide();
+    setTimeout(function(){
+      $(".cover_top").show();
+
+    }, 500);
+    setTimeout(function(){
+      $(".cover_bottom").show();
+    }, 1000);
+  });
+
+</script>
+</html>
