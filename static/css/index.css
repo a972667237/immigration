@@ -11,12 +11,17 @@ display:none;
 header{
   width: 100%;
   height: 100vh;
+  background: url("/static/imgs/videohover.jpg") no-repeat;
+  background-size: 100% 100%;
 }
 
 header .video_place{
-  width: 100%;
-  height: 100%;
-  position: relative;
+  width: 37%;
+  height: 40vh;
+  position: absolute;
+  right: 10%;
+  top: 25%;
+  z-index: 200;
 }
 
 .video_place video{
@@ -51,6 +56,15 @@ header .header_cover{
   width: 100%;
   height: 100%;
   font-size: 0;
+}
+
+.card_outer .card_desc{
+  font-size: 15px;
+  text-align: left;
+  text-indent: 1em;
+}
+.card_outer .card_desc a{
+  font-weight: 600;
 }
 
 .header_cover .cover_end .cover_end_first{
@@ -100,31 +114,39 @@ header .header_cover{
 
 main{
   width: 70%;
-  min-width: 800px;
+  min-width: 1000px;
   margin: 0 auto;
 }
 
 .card_place{
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
   font-size: 0;
 }
 
 .card_place .card_place_title{
-  font-size: 28px;
+  font-size: 34px;
   line-height: 92px;
   color: #031B3A;
 }
 
-.card_place .card{
-  display: inline-block;
-  margin-left: 10%;
-  width: 210px;
-  height: 120px;
-  background-color: red;
+.card_place .card_outer{
+  width: 25%;
+  min-width: 270px;
 }
 
-.card_place_title + .card{
+.card_place .card{
+  width: 100%;
+  height: 210px;
+  margin-bottom: 10px;
+}
+
+.card_place .card_outer{
+  display: inline-block;
+  margin-left: 6%;
+}
+
+.card_place .card_outer:nth-child(2){
   margin-left: 0 !important;
 }
 
@@ -174,9 +196,8 @@ video{
 }
 
 .video-js .vjs-big-play-button{
-  position: absolute;
-  top: 90%;
-  left: 90%;
+  top: 45%;
+  left: 45%;
   z-index: 200;
 }
 
@@ -209,23 +230,22 @@ video{
 }
 
 .contact{
-  position: fixed;
-  bottom: 0;
   width: 100%;
   padding-top: 1%;
+  padding-bottom: 1%;
   text-indent: 2em;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 1);
   color: white;
   line-height: 1.5em;
 }
 
 .contact_content{
-  width: 70%;
-  min-width: 800px;
+  width: 80%;
+  min-width: 900px;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1050px){
   html, body{
     height: 50vh;
   }
@@ -251,8 +271,11 @@ video{
     border-right: 6vh solid transparent ;
   }
   .card_place .card{
+        height: 150px;
+  }
+  .card_place .card_outer{
     display: block;
-    margin: 25px auto !important;
+    margin: 25px auto 10px auto !important;
   }
   .video-js .vjs-big-play-button{
     position: absolute;
@@ -267,7 +290,15 @@ video{
     color: white;
   }
   .hamburger{
-    left: 85%;
+    left: 80%;
     top: 1%;
+  }
+  header .video_place{
+    top: 15%;
+    height: 20vh;
+  }
+  .video-js .vjs-big-play-button{
+    top: 30%;
+    left: 25%;
   }
 }
