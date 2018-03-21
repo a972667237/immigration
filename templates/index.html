@@ -1,183 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Index</title>
-  <link rel="stylesheet" href="/static/css/reset.css">
-  <link href="/static/css/video-js.css" rel="stylesheet">
-  <link rel="stylesheet" href="/static/css/jquery.fatNav.min.css">
-  <link rel="stylesheet" href="/static/css/animate.css">
-  <link rel="stylesheet" href="/static/css/index.css">
-</head>
-<body>
-  <header>
-    <div class="fat-nav">
-        <div class="fat-nav__wrapper">
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">关于我们</a></li>
-                <li><a href="#">咨询专家</a></li>
-                <li><a href="#">文化介绍</a></li>
-                <li><a href="#">联系方式</a></li>
-            </ul>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index~</title>
+    <link rel="stylesheet" href="/static/css/bulma.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet" href="/static/css/jquery.fatNav.min.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+  </head>
+  <body>
+    <!-- contain video and logo -->
+    <header>
+      <!-- hamburger place -->
+      <div class="fat-nav">
+          <div class="fat-nav__wrapper">
+              <ul>
+                  <li><a href="#">首页</a></li>
+                  <li><a href="#">关于我们</a></li>
+                  <li><a href="#">咨询专家</a></li>
+                  <li><a href="#">文化介绍</a></li>
+                  <li><a href="#">联系方式</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="header_outer">
+        <img src="/static/imgs/background.jpg" alt="" class="header_background">
+        <div class="cover_end">
+          <div class="cover_end_first"></div>
+          <div class="cover_end_second"></div>
         </div>
-    </div>
-    <div class="header_cover animated fadeInLeft">
-      <div class="cover_end">
-        <div class="cover_end_first"></div>
-        <div class="cover_end_second"></div>
-      </div>
-      <div class="cover_front">
-        <div class="cover_front_first"></div>
-        <div class="cover_front_second"></div>
-      </div>
-      <div class="cover_top animated fadeInLeft">
-        <div class="logo">
-          <a href="#">
-            <img src="/static/imgs/logo2.png" alt="">
-          </a>
+        <div class="cover_front">
+          <div class="cover_front_first"></div>
+          <div class="cover_front_second"></div>
+          <div class="cover_front_third">
+            <div class="logo">
+              <a href="#">
+                NewSight&China
+              </a>
+            </div>
+            <video id="my-video" class="video-js" controls preload="auto" data-setup="{}"  >
+              <source src="/static/video/ow.mp4" type='video/mp4'>
+            </video>
+            <div class="video_descript">
+              视频介绍： <br>
+              你是个好视频
+            </div>
+          </div>
         </div>
       </div>
-      <div class="cover_bottom animated fadeInLeft">
-        <div class="video_desc">
-          视频简介： <br>
-          这是视频区域
-          专门放视频的啊
+    </header>
+    <!-- card and emmmm  -->
+    <main class="container">
+      <label class="card_title">关于我们的项目</label>
+      <div class="card_place about_card tile is-parent">
+        <div class="card_outer tile is-child box">
+            <div class="card australia_card animated fadeInLeft wow">
+              <a href="#">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="#">澳洲: 南方的大陆</a>
+                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+            </div>
+        </div>
+        <div class="card_outer tile is-child box">
+            <div class="card newzeland_card animated zoomIn wow">
+              <a href="#">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="#">新西兰: 你不知道的美</a>
+                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+            </div>
+        </div>
+        <div class="card_outer tile is-child box">
+            <div class="card canada_card animated fadeInRight wow">
+              <a href="#">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="#">加拿大：异国</a>
+                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+            </div>
         </div>
       </div>
-    </div>
-    <div class="video_place">
-        <video  id="my-video" class="video-js" controls preload="auto" data-setup="{}"  >
-          <source src="/static/video/ow.mp4" type='video/mp4'>
-        </video>
-    </div>
-  </header>
-  <main>
-    <div class="card_place about_card">
-      <div class="card_place_title"><span>关于我们的项目</span></div>
-      <div class="card_outer">
-          <div class="card australia_card animated fadeInLeft wow">
-            <a href="#">
-              <div class="card_cover">
-              </div>
-            </a>
-          </div>
-          <div class="card_desc">
-              <a href="#">澳洲: 南方的大陆</a>
-              <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
-          </div>
+      <label class="card_title">关于我们的项目</label>
+      <div class="card_place about_card tile is-parent">
+        <div class="card_outer tile is-child box">
+            <div class="card australia_card animated fadeInLeft wow">
+              <a href="#">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="#">澳洲: 南方的大陆</a>
+                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+            </div>
+        </div>
+        <div class="card_outer tile is-child box">
+            <div class="card newzeland_card animated zoomIn wow">
+              <a href="#">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="#">新西兰: 你不知道的美</a>
+                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+            </div>
+        </div>
+        <div class="card_outer tile is-child box">
+            <div class="card canada_card animated fadeInRight wow">
+              <a href="#">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="#">加拿大：异国</a>
+                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+            </div>
+        </div>
       </div>
-      <div class="card_outer">
-          <div class="card newzeland_card animated zoomIn wow">
-            <a href="#">
-              <div class="card_cover">
-              </div>
-            </a>
-          </div>
-          <div class="card_desc">
-              <a href="#">新西兰: 你不知道的美</a>
-              <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
-          </div>
+      <label class="card_title">关于我们的项目</label>
+      <div class="card_place about_card tile is-parent">
+        <div class="card_outer tile is-child box">
+            <div class="card australia_card animated fadeInLeft wow">
+              <a href="#">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="#">澳洲: 南方的大陆</a>
+                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+            </div>
+        </div>
+        <div class="card_outer tile is-child box">
+            <div class="card newzeland_card animated zoomIn wow">
+              <a href="#">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="#">新西兰: 你不知道的美</a>
+                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+            </div>
+        </div>
+        <div class="card_outer tile is-child box">
+            <div class="card canada_card animated fadeInRight wow">
+              <a href="#">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="#">加拿大：异国</a>
+                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+            </div>
+        </div>
       </div>
-      <div class="card_outer">
-          <div class="card canada_card animated fadeInRight wow">
-            <a href="#">
-              <div class="card_cover">
-              </div>
-            </a>
-          </div>
-          <div class="card_desc">
-              <a href="#">加拿大：异国</a>
-              <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
-          </div>
-      </div>
-    </div>
-    <div class="card_place tradition_card">
-      <div class="card_place_title"><span>风土人情</span></div>
-      <div class="card_outer">
-          <div class="card australia_card animated fadeInLeft wow">
-            <a href="#">
-              <div class="card_cover">
-              </div>
-            </a>
-          </div>
-          <div class="card_desc">
-              <a href="#">澳洲: 南方的大陆</a>
-              <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
-          </div>
-      </div>
-      <div class="card_outer">
-          <div class="card newzeland_card animated zoomIn wow">
-            <a href="#">
-              <div class="card_cover">
-              </div>
-            </a>
-          </div>
-          <div class="card_desc">
-              <a href="#">新西兰: 你不知道的美</a>
-              <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
-          </div>
-      </div>
-      <div class="card_outer">
-          <div class="card canada_card animated fadeInRight wow">
-            <a href="#">
-              <div class="card_cover">
-              </div>
-            </a>
-          </div>
-          <div class="card_desc">
-              <a href="#">加拿大：异国</a>
-              <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
-          </div>
-      </div>
-    </div>
-    <div class="card_place route_card">
-      <div class="card_place_title"><span>旅游路线</span></div>
-      <div class="card_outer">
-          <div class="card australia_card animated fadeInLeft wow">
-            <a href="#">
-              <div class="card_cover">
-              </div>
-            </a>
-          </div>
-          <div class="card_desc">
-              <a href="#">澳洲: 南方的大陆</a>
-              <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
-          </div>
-      </div>
-      <div class="card_outer">
-          <div class="card newzeland_card animated zoomIn wow">
-            <a href="#">
-              <div class="card_cover">
-              </div>
-            </a>
-          </div>
-          <div class="card_desc">
-              <a href="#">新西兰: 你不知道的美</a>
-              <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
-          </div>
-      </div>
-      <div class="card_outer">
-          <div class="card canada_card animated fadeInRight wow">
-            <a href="#">
-              <div class="card_cover">
-              </div>
-            </a>
-          </div>
-          <div class="card_desc">
-              <a href="#">加拿大：异国</a>
-              <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
-          </div>
-      </div>
-    </div>
 
-    <div class="map_place">
-      <img src="/static/imgs/map.png">
-    </div>
-  </main>
-  <footer>
+      <div class="map_place">
+        <img src="/static/imgs/map.png">
+      </div>
+    </main>
+    <!-- form and contact -->
+    <footer>
+      <div class="form_outer">
+        <div class="user_form">
+              <div class="user_form_left">
+                  <h2>有什么对我们想说的吗</h2>
+                  <p>在右边留下您的信息以帮助我们沟通</p>
+              </div>
+              <form action="/" method="post">
+                <div class="field">
+                  <div class="control">
+                      <label class="label">Name</label>
+                    <input class="input is-info" type="text" placeholder="名字：" name="name">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                      <label class="label">Name</label>
+                    <input class="input is-info" type="tel" placeholder="电话：" name="phone">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                      <label class="label">Name</label>
+                    <input class="input is-info" type="email" placeholder="邮箱：" name="email">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
+                      <label class="label">Message</label>
+                    <textarea class="textarea" placeholder="评论："></textarea>
+                  </div>
+                </div>
+              </form>
+          </div>
+     </div>
     <div class="contact">
       <div class="contact_content">
         <p>CONTACT</p>
@@ -186,58 +217,10 @@
       </div>
     </div>
     <div class="copyright"></div>
-  </footer>
-</body>
-<script src="/static/js/jquery-1.11.3.min.js" charset="utf-8"></script>
-<script src="/static/js/video.js"></script>
-<script src="/static/js/wow.js"></script>
-<script src="/static/js/jquery.fatNav.min.js" charset="utf-8"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    new WOW().init();
-    $.fatNav();
-    $(".contact").hide();
-    $(document).scroll(function(){
-        now = $(document).scrollTop();
-        if(now > 600){
-          $(".contact").show();
-        }
-        else{
-          $(".contact").hide();
-        }
-    });
-{#    var player = videojs('my-video');#}
-{#    player.on('play', function(){#}
-{#      $(".header_cover").hide();#}
-{#      $(".vjs-big-play-button").css("display", "none");#}
-{#    });#}
-{#    player.on('pause', function(){#}
-{#      $(".header_cover").show();#}
-{#      $(".vjs-big-play-button").css("display", "block");#}
-{#    });#}
-
-    $(".card").hover(function(){
-
-      if($(this).hasClass("pulse")){
-        $(this).removeClass("pulse");
-        $(this).css("animation-name", "none");
-
-      }
-      else{
-        $(this).css("animation-name", "pulse");
-        $(this).addClass("pulse animated");
-      }
-    });
-    $(".cover_top").hide();
-    $(".cover_bottom").hide();
-    setTimeout(function(){
-      $(".cover_top").show();
-
-    }, 500);
-    setTimeout(function(){
-      $(".cover_bottom").show();
-    }, 1000);
-  });
-
-</script>
+    </footer>
+  </body>
+  <script src="/static/js/jquery-1.11.3.min.js" charset="utf-8"></script>
+  <script src="/static/js/jquery.fatNav.min.js" charset="utf-8"></script>
+  <script src="/static/js/wow.js" charset="utf-8"></script>
+  <script src="/static/js/index.js" charset="utf-8"></script>
 </html>

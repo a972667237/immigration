@@ -1,37 +1,116 @@
 html, body{
+  padding: 0;
+  border: 0;
+  margin: 0;
   width: 100%;
-  height: 100%;
-  font-family: "Microsoft YaHei";
 }
 
-::-webkit-scrollbar{
-display:none;
+@font-face{
+  font-family: "garamond";
+  src: url("/static/fonts/AGaramond-Regular.otf");
 }
 
 header{
   width: 100%;
+}
+
+header .header_outer{
+  width: 100%;
   height: 100vh;
-  background: url("/static/imgs/videohover.jpg") no-repeat;
-  background-size: 100% 100%;
+  position: relative;
 }
 
-header .video_place{
-  width: 37%;
-  height: 40vh;
-  position: absolute;
-  right: 10%;
-  top: 25%;
-  z-index: 200;
-}
-
-.video_place video{
+.header_outer .header_background{
   width: 100%;
   height: 100%;
 }
 
-.hamburger{
-  left: 95%;
-  top: 5%;
+.cover_end{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cover_end .cover_end_first{
+  display: inline-block;
+  width: 45%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.cover_end .cover_end_second{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 45vh solid black;
+  border-bottom: 50vh solid black;
+  border-top: 50vh solid transparent;
+  border-right: 45vh solid transparent;
+  opacity: 0.6;
+}
+
+.cover_front{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+
+.cover_front .cover_front_first{
+  display: inline-block;
+  width: 43%;
+  height: 100%;
+  background-color: black;
+}
+
+.cover_front .cover_front_second{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 42vh solid black;
+  border-bottom: 50vh solid black;
+  border-top: 50vh solid transparent;
+  border-right: 42vh solid transparent;
+}
+
+.cover_front .cover_front_third{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cover_front .logo{
+  width: 40%;
+  font-size: 48px;
+  padding: 32px 0 0 1em;
+  margin-bottom: 64px;
+}
+
+.cover_front .logo a{
+  color: white;
+  font-family: "garamond";
+}
+
+.cover_front .cover_front_third video{
+  width: 50%;
+  margin-left: 48px;
+  border: 1px solid white;
+}
+
+.cover_front .cover_front_third .video_descript{
+  font-size: 18px;
+  padding-left: 48px;
+  padding-top: 12px;
+  color: white;
+  font-family: "Microsoft YaHei";
 }
 
 .hamburger .hamburger__icon,
@@ -40,114 +119,12 @@ header .video_place{
     background-color: red;
 }
 
-header .header_cover{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-}
-
-.header_cover .cover_end{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-size: 0;
-}
-
-.card_outer .card_desc{
-  font-size: 15px;
-  text-align: left;
-  text-indent: 1em;
-}
-.card_outer .card_desc a{
-  font-weight: 600;
-}
-
-.header_cover .cover_end .cover_end_first{
-  display: inline-block;
-  width: 35%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.2;
-}
-
-.header_cover .cover_end .cover_end_second{
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 15vh solid black;
-  border-bottom: 50vh solid black;
-  border-top: 50vh solid transparent;
-  border-right: 15vh solid transparent;
-  opacity: 0.2;
-}
-
-.header_cover .cover_front{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-size: 0;
-}
-
-.header_cover .cover_front .cover_front_first{
-  display: inline-block;
-  width: 33%;
-  height: 100%;
-  background-color: black;
-}
-
-.header_cover .cover_front .cover_front_second{
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 12vh solid black;
-  border-bottom: 50vh solid black;
-  border-top: 50vh solid transparent;
-  border-right: 12vh solid transparent;
-}
-
 main{
-  width: 70%;
-  min-width: 1000px;
-  margin: 0 auto;
+  margin-top: 32px !important;
 }
 
-.card_place{
-  text-align: left;
-  margin: 0 auto;
-  font-size: 0;
-}
-
-.card_place .card_place_title{
-  font-size: 34px;
-  line-height: 92px;
-  color: #031B3A;
-}
-
-.card_place .card_outer{
-  width: 25%;
-  min-width: 270px;
-}
-
-.card_place .card{
+main .card_place{
   width: 100%;
-  height: 210px;
-  margin-bottom: 10px;
-}
-
-.card_place .card_outer{
-  display: inline-block;
-  margin-left: 6%;
-}
-
-.card_place .card_outer:nth-child(2){
-  margin-left: 0 !important;
 }
 
 .australia_card{
@@ -165,64 +142,25 @@ main{
   background-size: 100% 100%:
 }
 
-.card .card_cover{
-  background-color: rgba(0, 0, 0, 0.3);
+.card{
   width: 100%;
+  height: 180px;
+}
+
+.card_outer{
+  margin-right: 32px;
+}
+
+.card_place .card_outer:last-child{
+  margin-right: 0;
+}
+
+.card_cover{
   height: 100%;
 }
 
-a:hover{
-  text-decoration: none;
-}
-
-.card_cover p{
-  color: white;
-  font-size: 24px;
-}
-
-.card_cover p span{
-  line-height: 60px;
-}
-
-.video_place .video-js{
-  width: 100%;
-  height: 100%;
-}
-
-video{
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.video-js .vjs-big-play-button{
-  top: 45%;
-  left: 45%;
-  z-index: 200;
-}
-
-.cover_top{
-  z-index: 100;
-  position: absolute;
-  top: 3%;
-  left: 3%;
-}
-
-.cover_bottom{
-  z-index: 100;
-  position: absolute;
-  bottom: 25%;
-  left: 3%;
-}
-
-.cover_bottom .video_desc{
-  font-size: 16px;
-  color: white;
-}
-
-.map_place{
-  margin-top: 5%;
-  width: 100%;
+.card_title{
+  margin-left: 2em;
 }
 
 .map_place img{
@@ -245,60 +183,36 @@ video{
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1050px){
-  html, body{
-    height: 50vh;
-  }
-  main{
-    min-width: 0;
-  }
-  header{
-    height: 50vh;
-  }
-  header .header_cover{
-    height: 50%;
-  }
-  .header_cover .cover_end .cover_end_second{
-    border-left: 7.5vh solid black ;
-    border-bottom: 25vh solid black ;
-    border-top: 25vh solid transparent ;
-    border-right: 7.5vh solid transparent ;
-  }
-  .header_cover .cover_front .cover_front_second{
-    border-left: 6vh solid black ;
-    border-bottom: 25vh solid black ;
-    border-top: 25vh solid transparent ;
-    border-right: 6vh solid transparent ;
-  }
-  .card_place .card{
-        height: 150px;
-  }
-  .card_place .card_outer{
-    display: block;
-    margin: 25px auto 10px auto !important;
-  }
-  .video-js .vjs-big-play-button{
-    position: absolute;
-    top: 70%;
-    left: 70%;
-  }
-  .cover_top .logo img{
-    max-width: 80px;
-  }
-  .cover_bottom .video_desc {
-    font-size: 8px;
+footer .form_outer{
     color: white;
-  }
-  .hamburger{
-    left: 80%;
-    top: 1%;
-  }
-  header .video_place{
-    top: 15%;
-    height: 20vh;
-  }
-  .video-js .vjs-big-play-button{
-    top: 30%;
-    left: 25%;
-  }
+  width: 100%;
+      background-image: url(http://180rh8g1u2xxxopp3e1u6mz0.wpengine.netdna-cdn.com/wp-content/uploads/2016/08/GazeBurt-Newsletter-sign-up-background.jpg?id=49);
+  border-bottom:1px solid rgb(233, 234, 238);
+  text-indent: 1em;
+}
+.form_outer .user_form{
+  width: 80%;
+  margin: 0 auto;
+}
+.user_form_left{
+  width: 30%;
+}
+form{
+  margin-left: 10%;
+  width: 50%;
+}
+.user_form_left, form{
+  display: inline-block;
+  vertical-align: top;
+}
+.user_form{
+  padding: 3% 0;
+}
+form .field .label{
+  font-size: 0;
+}
+
+.hamburger{
+  left: 95%;
+  top: 5%;
 }

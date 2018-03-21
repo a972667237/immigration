@@ -1,0 +1,273 @@
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family: "Microsoft YaHei";
+}
+
+::-webkit-scrollbar{
+display:none;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+}
+
+header .video_place{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video_place video{
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger{
+  left: 95%;
+  top: 5%;
+}
+
+.hamburger .hamburger__icon,
+.hamburger .hamburger__icon:before,
+.hamburger .hamburger__icon:after {
+    background-color: red;
+}
+
+header .header_cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.header_cover .cover_end{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+
+.header_cover .cover_end .cover_end_first{
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+}
+
+.header_cover .cover_end .cover_end_second{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 15vh solid black;
+  border-bottom: 50vh solid black;
+  border-top: 50vh solid transparent;
+  border-right: 15vh solid transparent;
+  opacity: 0.2;
+}
+
+.header_cover .cover_front{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+
+.header_cover .cover_front .cover_front_first{
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  background-color: black;
+}
+
+.header_cover .cover_front .cover_front_second{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 12vh solid black;
+  border-bottom: 50vh solid black;
+  border-top: 50vh solid transparent;
+  border-right: 12vh solid transparent;
+}
+
+main{
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.card_place{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.card_place .card_place_title{
+  font-size: 28px;
+  line-height: 92px;
+  color: #031B3A;
+}
+
+.card_place .card{
+  display: inline-block;
+  margin-left: 10%;
+  width: 210px;
+  height: 120px;
+  background-color: red;
+}
+
+.card_place_title + .card{
+  margin-left: 0 !important;
+}
+
+.australia_card{
+  background: url('../imgs/aust.jpeg');
+  background-size: 100% 100%;
+}
+
+.newzeland_card{
+  background: url('../imgs/newzeland.jpg');
+  background-size: 100% 100%;
+}
+
+.canada_card{
+  background: url('../imgs/canada.jpg');
+  background-size: 100% 100%:
+}
+
+.card .card_cover{
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.card_cover p{
+  color: white;
+  font-size: 24px;
+}
+
+.card_cover p span{
+  line-height: 60px;
+}
+
+.video_place .video-js{
+  width: 100%;
+  height: 100%;
+}
+
+video{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video-js .vjs-big-play-button{
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  z-index: 200;
+}
+
+.cover_top{
+  z-index: 100;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.cover_bottom{
+  z-index: 100;
+  position: absolute;
+  bottom: 25%;
+  left: 3%;
+}
+
+.cover_bottom .video_desc{
+  font-size: 16px;
+  color: white;
+}
+
+.map_place{
+  margin-top: 5%;
+  width: 100%;
+}
+
+.map_place img{
+  width: 100%;
+}
+
+.contact{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 1%;
+  text-indent: 2em;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  line-height: 1.5em;
+}
+
+.contact_content{
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px){
+  html, body{
+    height: 50vh;
+  }
+  main{
+    min-width: 0;
+  }
+  header{
+    height: 50vh;
+  }
+  header .header_cover{
+    height: 50%;
+  }
+  .header_cover .cover_end .cover_end_second{
+    border-left: 7.5vh solid black ;
+    border-bottom: 25vh solid black ;
+    border-top: 25vh solid transparent ;
+    border-right: 7.5vh solid transparent ;
+  }
+  .header_cover .cover_front .cover_front_second{
+    border-left: 6vh solid black ;
+    border-bottom: 25vh solid black ;
+    border-top: 25vh solid transparent ;
+    border-right: 6vh solid transparent ;
+  }
+  .card_place .card{
+    display: block;
+    margin: 25px auto !important;
+  }
+  .video-js .vjs-big-play-button{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+  }
+  .cover_top .logo img{
+    max-width: 80px;
+  }
+  .cover_bottom .video_desc {
+    font-size: 8px;
+    color: white;
+  }
+  .hamburger{
+    left: 85%;
+    top: 1%;
+  }
+}
