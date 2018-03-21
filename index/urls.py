@@ -19,5 +19,5 @@ from .views import *
 
 urlpatterns = [
     url(r'^$', index),
-    url(r'^base$', base),
+    url(r'^expert', expert),
 ]

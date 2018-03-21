@@ -5,5 +5,5 @@ def index(requests):
     return render(requests, 'index.html')
 
 
-def base(requests):
-    return render(requests, 'base.html')
+def expert(requests):
+    return render(requests, 'expert.html')
