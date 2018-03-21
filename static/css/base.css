@@ -1,0 +1,106 @@
+html, body{
+  padding: 0;
+  border: 0;
+  margin: 0;
+  width: 100%;
+}
+
+@font-face{
+  font-family: "garamond";
+  src: url("../fonts/AGaramond-Regular.otf");
+}
+
+header{
+  width: 100%;
+  max-height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+header img{
+  width: 100%;
+}
+
+.img-hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hamburger{
+  left: 95%;
+  top: 5%;
+}
+
+.hamburger .hamburger__icon,
+.hamburger .hamburger__icon:before,
+.hamburger .hamburger__icon:after {
+    background-color: red;
+}
+
+.logo{
+  width: 40%;
+  font-size: 48px;
+  padding: 32px 0 0 1em;
+  margin-bottom: 64px;
+}
+
+.logo a{
+  color: white;
+  font-family: "garamond";
+}
+
+.pagename{
+  font-size: 48px;
+  padding: 32px 0 0 3em;
+  color: white;
+}
+
+.pagename span{
+  text-shadow: 0 2px 3px #000;
+}
+
+.contact{
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-indent: 2em;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  line-height: 1.5em;
+}
+
+.contact_content{
+  width: 80%;
+  min-width: 900px;
+  margin: 0 auto;
+}
+
+footer .form_outer{
+    color: white;
+  width: 100%;
+      background-image: url(http://180rh8g1u2xxxopp3e1u6mz0.wpengine.netdna-cdn.com/wp-content/uploads/2016/08/GazeBurt-Newsletter-sign-up-background.jpg?id=49);
+  border-bottom:1px solid rgb(233, 234, 238);
+  text-indent: 1em;
+}
+.form_outer .user_form{
+  width: 80%;
+  margin: 0 auto;
+}
+.user_form_left{
+  width: 30%;
+}
+form{
+  margin-left: 10%;
+  width: 50%;
+}
+.user_form_left, form{
+  display: inline-block;
+  vertical-align: top;
+}
+.user_form{
+  padding: 3% 0;
+}
+form .field .label{
+  font-size: 0;
+}
