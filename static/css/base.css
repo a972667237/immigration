@@ -32,6 +32,10 @@ header img{
   top: 5%;
 }
 
+main{
+  padding: 72px 0;
+}
+
 .hamburger .hamburger__icon,
 .hamburger .hamburger__icon:before,
 .hamburger .hamburger__icon:after {
