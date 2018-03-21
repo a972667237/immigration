@@ -7,3 +7,6 @@ def index(requests):
 
 def expert(requests):
     return render(requests, 'expert.html')
+
+def about(requests):
+    return render(requests, 'about.html')
