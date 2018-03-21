@@ -128,7 +128,7 @@ main .card_place{
 }
 
 .australia_card{
-  background: url('/static/imgs/aust.jpeg');
+  background: url('/static/imgs/australia.jpg');
   background-size: 100% 100%;
 }
 
@@ -139,7 +139,7 @@ main .card_place{
 
 .canada_card{
   background: url('/static/imgs/canada.jpg');
-  background-size: 100% 100%:
+  background-size: 100% 100%;
 }
 
 .card{
