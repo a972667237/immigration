@@ -10,3 +10,9 @@ def expert(requests):
 
 def about(requests):
     return render(requests, 'about.html')
+
+def culturl(requests):
+    return render(requests, 'culture.html')
+
+def contact(requests):
+    return render(requests, 'contact.html')

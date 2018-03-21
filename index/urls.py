@@ -20,5 +20,7 @@ from .views import *
 urlpatterns = [
     url(r'^$', index),
     url(r'^expert', expert),
-    url(r'^about', about)
+    url(r'^about', about),
+    url(r'^culture', culturl),
+    url(r'^contact', contact)
 ]
