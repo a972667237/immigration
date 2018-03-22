@@ -3,6 +3,7 @@ html, body{
   border: 0;
   margin: 0;
   width: 100%;
+  overflow-x: hidden;
 }
 
 @font-face{
@@ -342,20 +343,30 @@ form .field .label{
     height: 40vh;
   }
   .cover_front .logo{
-    font-size: 24px;
+    font-size: 20px;
     padding: 1em 0 0 1em;
     margin-bottom: 1em;
   }
 
   #my-video{
     max-height: 15vh;
-    margin-left: 24px;
+    margin-left: 20px;
   }
   .card_outer {
     margin: 0 auto;
   }
   .cover_front .cover_front_third .video_descript {
     display: none;
+  }
+  .hamburger {
+    left: 90%;
+    top: 5%;
+  }
+  .user_form_left {
+    display: none;
+  }
+  form {
+    width: 80%;
   }
 }
 

@@ -57,3 +57,9 @@ li a{
     font-size: 14px;
     color:#737E86;
 }
+
+@media screen and (max-width: 1050px) {
+    .tile.is-child {
+        margin-left: 0;
+    }
+}

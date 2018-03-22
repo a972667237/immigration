@@ -30,3 +30,13 @@
 .immi_card ul {
     padding-left: 1em;
 }
+
+@media screen and (max-width: 1050px) {
+    .immi_place {
+        width: 100%;
+    }
+    .immi_card{
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+}
