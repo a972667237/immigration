@@ -76,12 +76,13 @@
                 <div class="field">
                   <div class="control">
                       <label class="label">Message</label>
-                    <textarea class="textarea" placeholder="评论："></textarea>
+                    <textarea class="textarea" placeholder="评论：" name="comment"></textarea>
                   </div>
                 </div>
+                  {% csrf_token %}
                 <div class="field">
                   <div class="control">
-                    <button class="button is-link">提交</button>
+                    <button class="button is-link" type="button">提交</button>
                   </div>
                 </div>
               </form>
@@ -106,5 +107,19 @@
     $.fatNav();
     {% block scripts %}
     {% endblock %}
+    $(".is-link").click(function() {
+      var params1 = $("form").serialize();
+      $.ajax( {
+        type : "POST",
+        url : "/info",
+        data : params1,
+        success : function(msg) {
+            alert(msg);
+            $("input").val("");
+            $("textarea").val("");
+        }
+    });
+  })
+  })
   </script>
 </html>

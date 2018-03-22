@@ -102,7 +102,7 @@ header .header_outer{
 
 #my-video{
   width: 40%;
-  max-height: 500px;
+  max-height: 40vh;
   margin-left: 48px;
 }
 

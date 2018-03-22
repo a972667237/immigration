@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^about', about),
     url(r'^culture', culturl),
     url(r'^contact', contact),
-    url(r'^article', article)
+    url(r'^article', article),
+    url(r'^info', info_submit)
 ]

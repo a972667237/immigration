@@ -1,4 +1,6 @@
+#coding: utf-8
 from django.shortcuts import render
+from django.http import HttpResponse
 from .models import *
 # Create your views here.
 def index(requests):
@@ -35,3 +37,24 @@ def article(requests):
 
     art = Article.objects.get(pk=article_id)
     return render(requests, 'article.html', locals())
+
+def info_submit(requests):
+    if requests.method == "POST":
+        import re
+        name = requests.POST.get('name')
+        if len(name) == 0:
+            return HttpResponse("必须输入名字")
+        phone = requests.POST.get('phone')
+        p = re.compile('^0\d{2,3}\d{7,8}$|^1[3578]\d{9}$|^147\d{8}')
+        if not p.match(phone):
+            return HttpResponse("手机格式有误")
+        email = requests.POST.get('email')
+        if not email:
+            return HttpResponse("必须输入邮箱")
+        comment = requests.POST.get('comment')
+        try:
+            Info(name=name, phone=phone, email=email, comment=comment).save()
+        except:
+            return HttpResponse("不可预知的错误")
+        return HttpResponse("提交成功")
+    return HttpResponse("访问错误")
