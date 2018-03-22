@@ -228,9 +228,9 @@ main .card_place{
 }
 
 footer .form_outer{
-    color: white;
+  color: white;
   width: 100%;
-      background-image: url(http://180rh8g1u2xxxopp3e1u6mz0.wpengine.netdna-cdn.com/wp-content/uploads/2016/08/GazeBurt-Newsletter-sign-up-background.jpg?id=49);
+  background-image: url(http://180rh8g1u2xxxopp3e1u6mz0.wpengine.netdna-cdn.com/wp-content/uploads/2016/08/GazeBurt-Newsletter-sign-up-background.jpg?id=49);
   border-bottom:1px solid rgb(233, 234, 238);
   text-indent: 1em;
 }
@@ -342,11 +342,20 @@ form .field .label{
     height: 40vh;
   }
   .cover_front .logo{
-    font-size: 36px;
+    font-size: 24px;
+    padding: 1em 0 0 1em;
+    margin-bottom: 1em;
   }
+
   #my-video{
     max-height: 15vh;
+    margin-left: 24px;
   }
-  
+  .card_outer {
+    margin: 0 auto;
+  }
+  .cover_front .cover_front_third .video_descript {
+    display: none;
+  }
 }
 
