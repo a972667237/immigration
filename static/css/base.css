@@ -69,7 +69,8 @@ main{
   padding-top: 1%;
   padding-bottom: 1%;
   text-indent: 2em;
-  background-color: rgba(0, 0, 0, 1);
+  background: url('/static/imgs/contact_bot.jpeg') no-repeat;
+  background-size: 100%;
   color: white;
   line-height: 1.5em;
 }
@@ -81,9 +82,9 @@ main{
 }
 
 footer .form_outer{
-    color: white;
+  color: white;
   width: 100%;
-      background-image: url(http://180rh8g1u2xxxopp3e1u6mz0.wpengine.netdna-cdn.com/wp-content/uploads/2016/08/GazeBurt-Newsletter-sign-up-background.jpg?id=49);
+  background-image: url(http://180rh8g1u2xxxopp3e1u6mz0.wpengine.netdna-cdn.com/wp-content/uploads/2016/08/GazeBurt-Newsletter-sign-up-background.jpg?id=49);
   border-bottom:1px solid rgb(233, 234, 238);
   text-indent: 1em;
 }

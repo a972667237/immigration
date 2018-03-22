@@ -130,6 +130,9 @@ main{
 
 main .card_place{
   width: 100%;
+  border-bottom: 1px solid #e6e3dc;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .card{
@@ -199,7 +202,6 @@ main .card_place{
 }
 
 .card_title{
-  margin-left: 1em;
   font-size: 32px;
 }
 
@@ -212,7 +214,8 @@ main .card_place{
   padding-top: 1%;
   padding-bottom: 1%;
   text-indent: 2em;
-  background-color: rgba(0, 0, 0, 1);
+  background: url('/static/imgs/contact_bot.jpeg') no-repeat;
+  background-size: 100%;
   color: white;
   line-height: 1.5em;
 }
