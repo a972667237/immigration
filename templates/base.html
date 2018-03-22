@@ -100,6 +100,8 @@
   <script src="/static/js/jquery-1.11.3.min.js" charset="utf-8"></script>
   <script src="/static/js/jquery.fatNav.min.js" charset="utf-8"></script>
   <script src="/static/js/wow.js" charset="utf-8"></script>
+  {% block scriptSrc %}
+  {% endblock %}
   <script type="text/javascript">
     $.fatNav();
     {% block scripts %}

@@ -13,7 +13,8 @@ def about(requests):
     return render(requests, 'about.html')
 
 def culturl(requests):
-    return render(requests, 'culture.html')
+    article = Article.objects.all()
+    return render(requests, 'culture.html', locals())
 
 def contact(requests):
     return render(requests, 'contact.html')

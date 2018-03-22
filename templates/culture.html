@@ -3,9 +3,50 @@
 {% block image %}culture.jpeg{% endblock %}
 {% block pagename %}文化介绍{% endblock %}
 {% block style %}
+    <link rel="stylesheet" href="/static/css/culture.css">
 {% endblock %}
 {% block main %}
-    <div class="tile is-ancestor">
+    <label class="card_title">文化洞见</label>
+      <div class="card_place culture_card tile is-parent">
+        <div class="card_outer tile is-child">
+            <div class="card australia_card animated fadeInLeft wow">
+              <a href="/article?id=7">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="/article?id=7">{{ article.6.title }}</a>
+                <p>{{ article.6.description }}</p>
+            </div>
+        </div>
+        <div class="card_outer tile is-child">
+            <div class="card newzeland_card animated zoomIn wow">
+              <a href="/article?id=8">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="/article?id=8">{{ article.7.title }}</a>
+                <p>{{ article.7.description }}</p>
+            </div>
+        </div>
+        <div class="card_outer tile is-child">
+            <div class="card canada_card animated fadeInRight wow">
+              <a href="/article?id=9">
+                <div class="card_cover">
+                </div>
+              </a>
+            </div>
+            <div class="card_desc">
+                <a href="/article?id=9">{{ article.8.title }}</a>
+                <p>{{ article.8.description }}</p>
+            </div>
+        </div>
+      </div>
+{% endblock %}
 
-    </div>
+{% block scriptSrc %}
+<script src="/static/js/index.js" charset="utf-8"></script>
 {% endblock %}
