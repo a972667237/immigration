@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'index'
+    'index',
+    'DjangoUeditor'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -105,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-cn'
 
 TIME_ZONE = 'UTC'
 
@@ -134,5 +135,5 @@ UEDITOR_SETTINGS = {
         'path': 'img_upload_file/',
         'max_size': '3000kb',
     },
-    "imageUrlPrefix": "/futuresmedia/"
+    "imageUrlPrefix": "/immigration-media/"
 }

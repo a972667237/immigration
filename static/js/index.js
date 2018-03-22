@@ -1,7 +1,6 @@
 $(document).ready(function(){
   new WOW().init();
   $.fatNav();
-
   $(".card").hover(function(){
 
     if($(this).hasClass("pulse")){

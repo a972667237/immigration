@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/static/css/bulma.css">
     <link rel="stylesheet" href="/static/css/animate.css">
     <link rel="stylesheet" href="/static/css/jquery.fatNav.min.css">
+    <link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/index.css">
   </head>
   <body>
@@ -38,7 +39,7 @@
                 NewSight&China
               </a>
             </div>
-            <video id="my-video" class="video-js" controls preload="auto" data-setup="{}"  >
+            <video id="my-video" class="video-js vjs-big-play-centered vjs-default-skin" controls preload="auto" data-setup='{"autoplay": "true"}'  >
               <source src="/static/video/ow.mp4" type='video/mp4'>
             </video>
             <div class="video_descript">
@@ -51,8 +52,8 @@
     </header>
     <!-- card and emmmm  -->
     <main class="container">
-      <label class="card_title">关于我们的项目</label>
-      <div class="card_place about_card tile is-parent">
+      <label class="card_title">头条攻略</label>
+      <div class="card_place guide_card tile is-parent">
         <div class="card_outer tile is-child box">
             <div class="card australia_card animated fadeInLeft wow">
               <a href="#">
@@ -61,8 +62,8 @@
               </a>
             </div>
             <div class="card_desc">
-                <a href="#">澳洲: 南方的大陆</a>
-                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+                <a href="/article?id=1">{{ article.0.title }}</a>
+                <p>{{ article.0.description }}</p>
             </div>
         </div>
         <div class="card_outer tile is-child box">
@@ -73,20 +74,20 @@
               </a>
             </div>
             <div class="card_desc">
-                <a href="#">新西兰: 你不知道的美</a>
-                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+                <a href="/article?id=2">{{ article.1.title }}</a>
+                <p>{{ article.1.description }}</p>
             </div>
         </div>
         <div class="card_outer tile is-child box">
             <div class="card canada_card animated fadeInRight wow">
-              <a href="#">
+              <a href="/article?id=3">
                 <div class="card_cover">
                 </div>
               </a>
             </div>
             <div class="card_desc">
-                <a href="#">加拿大：异国</a>
-                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+                <a href="#">{{ article.2.title }}</a>
+                <p>{{ article.2.description }}</p>
             </div>
         </div>
       </div>
@@ -100,20 +101,20 @@
               </a>
             </div>
             <div class="card_desc">
-                <a href="#">澳洲: 南方的大陆</a>
-                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+                <a href="/article?id=4">{{ article.3.title }}</a>
+                <p>{{ article.3.description }}</p>
             </div>
         </div>
         <div class="card_outer tile is-child box">
             <div class="card newzeland_card animated zoomIn wow">
-              <a href="#">
+              <a href="/article?id=5">
                 <div class="card_cover">
                 </div>
               </a>
             </div>
             <div class="card_desc">
-                <a href="#">新西兰: 你不知道的美</a>
-                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+                <a href="/article?id=6">{{ article.4.title }}</a>
+                <p>{{ article.4.description }}</p>
             </div>
         </div>
         <div class="card_outer tile is-child box">
@@ -124,13 +125,13 @@
               </a>
             </div>
             <div class="card_desc">
-                <a href="#">加拿大：异国</a>
-                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+                <a href="/article?id=7">{{ article.5.title }}</a>
+                <p>{{ article.5.description }}</p>
             </div>
         </div>
       </div>
-      <label class="card_title">关于我们的项目</label>
-      <div class="card_place about_card tile is-parent">
+      <label class="card_title">文化洞见</label>
+      <div class="card_place culture_card tile is-parent">
         <div class="card_outer tile is-child box">
             <div class="card australia_card animated fadeInLeft wow">
               <a href="#">
@@ -139,8 +140,8 @@
               </a>
             </div>
             <div class="card_desc">
-                <a href="#">澳洲: 南方的大陆</a>
-                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+                <a href="/article?id=8">{{ article.6.title }}</a>
+                <p>{{ article.6.description }}</p>
             </div>
         </div>
         <div class="card_outer tile is-child box">
@@ -151,8 +152,8 @@
               </a>
             </div>
             <div class="card_desc">
-                <a href="#">新西兰: 你不知道的美</a>
-                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+                <a href="/article?id=9">{{ article.7.title }}</a>
+                <p>{{ article.7.description }}</p>
             </div>
         </div>
         <div class="card_outer tile is-child box">
@@ -163,8 +164,8 @@
               </a>
             </div>
             <div class="card_desc">
-                <a href="#">加拿大：异国</a>
-                <p>创造卓越客户体验的公司能在竞争者中脱颖而出。本文概括了打造客户体验CEO应关心的十件大事。</p>
+                <a href="#">{{ article.8.title }}</a>
+                <p>{{ article.8.description }}</p>
             </div>
         </div>
       </div>
@@ -206,6 +207,11 @@
                     <textarea class="textarea" placeholder="评论："></textarea>
                   </div>
                 </div>
+                <div class="field">
+                  <div class="control">
+                    <button class="button is-link">提交</button>
+                  </div>
+                </div>
               </form>
           </div>
      </div>
@@ -221,6 +227,7 @@
   </body>
   <script src="/static/js/jquery-1.11.3.min.js" charset="utf-8"></script>
   <script src="/static/js/jquery.fatNav.min.js" charset="utf-8"></script>
+  <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
   <script src="/static/js/wow.js" charset="utf-8"></script>
   <script src="/static/js/index.js" charset="utf-8"></script>
 </html>

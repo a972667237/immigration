@@ -99,11 +99,11 @@ header .header_outer{
   font-family: "garamond";
 }
 
-.cover_front .cover_front_third video{
-  width: 50%;
+#my-video{
+  width: 45%;
   margin-left: 48px;
-  border: 1px solid white;
 }
+
 
 .cover_front .cover_front_third .video_descript{
   font-size: 18px;
@@ -111,6 +111,10 @@ header .header_outer{
   padding-top: 12px;
   color: white;
   font-family: "Microsoft YaHei";
+}
+
+::-webkit-scrollbar{
+display:none;
 }
 
 .hamburger .hamburger__icon,
@@ -127,18 +131,49 @@ main .card_place{
   width: 100%;
 }
 
-.australia_card{
+
+.about_card .australia_card{
   background: url('/static/imgs/australia.jpg');
   background-size: 100% 100%;
 }
 
-.newzeland_card{
+.about_card .newzeland_card{
   background: url('/static/imgs/newzeland.jpg');
   background-size: 100% 100%;
 }
 
-.canada_card{
+.about_card .canada_card{
   background: url('/static/imgs/canada.jpg');
+  background-size: 100% 100%;
+}
+
+.culture_card .australia_card{
+  background: url('/static/imgs/australia_culture.jpg');
+  background-size: 100% 100%;
+}
+
+.culture_card .newzeland_card{
+  background: url('/static/imgs/newzeland_culture.jpg');
+  background-size: 100% 100%;
+}
+
+.culture_card .canada_card{
+  background: url('/static/imgs/canada_culture.jpg');
+  background-size: 100% 100%;
+}
+
+.guide_card .australia_card{
+  background: url('/static/imgs/australia_guide.jpg');
+  background-size: 100% 100%;
+}
+
+.guide_card .newzeland_card{
+  background: url('/static/imgs/newzeland_guide.jpg');
+  background-size: 100% 100%;
+}
+
+.guide_card .canada_card{
+  background: url('/static/imgs/canada_guide.jpg');
   background-size: 100% 100%;
 }
 
@@ -148,7 +183,7 @@ main .card_place{
 }
 
 .card_outer{
-  margin-right: 32px;
+  margin-right: 48px;
 }
 
 .card_place .card_outer:last-child{
@@ -160,7 +195,8 @@ main .card_place{
 }
 
 .card_title{
-  margin-left: 2em;
+  margin-left: 1em;
+  font-size: 32px;
 }
 
 .map_place img{

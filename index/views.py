@@ -1,8 +1,9 @@
 from django.shortcuts import render
-
+from .models import *
 # Create your views here.
 def index(requests):
-    return render(requests, 'index.html')
+    article = Article.objects.all()
+    return render(requests, 'index.html', locals())
 
 
 def expert(requests):
@@ -16,3 +17,9 @@ def culturl(requests):
 
 def contact(requests):
     return render(requests, 'contact.html')
+
+
+def article(requests):
+    article_id = requests.GET.get('id')
+    art = Article.objects.get(pk=article_id)
+    return render(requests, 'article.html', locals())

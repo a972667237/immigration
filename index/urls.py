@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^expert', expert),
     url(r'^about', about),
     url(r'^culture', culturl),
-    url(r'^contact', contact)
+    url(r'^contact', contact),
+    url(r'^article', article)
 ]
