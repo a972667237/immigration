@@ -1,0 +1,32 @@
+
+
+.immi_place{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.immi_title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.immi_card{
+    margin: 0 auto;
+    max-width: 45%;
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    padding: 1em;
+    font-family: "Microsoft YaHei";
+}
+
+.immi_card ul li{
+    font-size: 14px;
+    line-height: 28px;
+    list-style: circle;
+}
+
+.immi_card ul {
+    padding-left: 1em;
+}

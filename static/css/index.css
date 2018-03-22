@@ -100,7 +100,8 @@ header .header_outer{
 }
 
 #my-video{
-  width: 45%;
+  width: 40%;
+  max-height: 500px;
   margin-left: 48px;
 }
 
@@ -259,3 +260,93 @@ form .field .label{
   left: 95%;
   top: 5%;
 }
+
+@media screen and (max-width: 1600px){
+  .cover_end .cover_end_second{
+    border-left: 40vh solid black;
+    border-bottom: 50vh solid black;
+    border-top: 50vh solid transparent;
+    border-right: 40vh solid transparent;
+  }
+  .cover_front .cover_front_second{
+    border-left: 37vh solid black;
+    border-bottom: 50vh solid black;
+    border-top: 50vh solid transparent;
+    border-right: 37vh solid transparent;
+  }
+}
+
+@media screen and (max-width: 1450px){
+  .cover_end .cover_end_second{
+    border-left: 35vh solid black;
+    border-bottom: 50vh solid black;
+    border-top: 50vh solid transparent;
+    border-right: 35vh solid transparent;
+  }
+  .cover_front .cover_front_second{
+    border-left: 32vh solid black;
+    border-bottom: 50vh solid black;
+    border-top: 50vh solid transparent;
+    border-right: 32vh solid transparent;
+  }
+}
+
+@media screen and (max-width: 1250px){
+  .cover_end .cover_end_second{
+    border-left: 30vh solid black;
+    border-bottom: 50vh solid black;
+    border-top: 50vh solid transparent;
+    border-right: 30vh solid transparent;
+  }
+  .cover_front .cover_front_second{
+    border-left: 27vh solid black;
+    border-bottom: 50vh solid black;
+    border-top: 50vh solid transparent;
+    border-right: 27vh solid transparent;
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .cover_end .cover_end_second{
+    border-left: 12.5vh solid black;
+    border-bottom: 20vh solid black;
+    border-top: 20vh solid transparent;
+    border-right: 12.5vh solid transparent;
+  }
+  .cover_front .cover_front_second{
+    border-left: 11vh solid black;
+    border-bottom: 20vh solid black;
+    border-top: 20vh solid transparent;
+    border-right: 11vh solid transparent;
+  }
+
+  header .header_outer{
+    height: 40vh;
+  }
+
+  .cover_end .cover_end_first{
+    height: 40vh;
+  }
+
+  .cover_front{
+    height: 40vh;
+  }
+
+  .cover_front .cover_front_first{
+    height: 40vh;
+  }
+  .cover_front .cover_front_third{
+    height: 40vh;
+  }
+  .cover_end{
+    height: 40vh;
+  }
+  .cover_front .logo{
+    font-size: 36px;
+  }
+  #my-video{
+    max-height: 15vh;
+  }
+  
+}
+
