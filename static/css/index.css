@@ -125,12 +125,16 @@ display:none;
 
 main{
   margin-top: 32px !important;
+  text-align: center;
 }
 
 main .card_place{
   width: 100%;
 }
 
+.card{
+  margin: 20px 0;	
+}
 
 .about_card .australia_card{
   background: url('/static/imgs/australia.jpg');
