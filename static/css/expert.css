@@ -31,10 +31,20 @@ img{
     display: block;
 }
 
-.gray-p{
+.detail-place{
+    width: 50%;
+    margin: 0 auto !important;
+}
+
+.gray-p {
     background-color: #dfdfdf;
     color: #736330;
     padding: 10px;
+    margin-top: -60%;
+}
+
+.detail-place .is-child{
+    margin: 0;
 }
 
 .info .name{
