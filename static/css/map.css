@@ -208,11 +208,10 @@ opacity: 0.0;
 }
 }
 
-#shenzhen_point .pulse {
+.pulse {
     position: absolute;
-    left: -50%;
-    top: -50%;
-
+    left: -18px;
+    top: -17px;
     width: 35px;
     height: 35px;
     border: 1px solid red;
@@ -229,10 +228,10 @@ opacity: 0.0;
     animation-iteration-count: infinite;
 }
 /* 产生动画（向外扩散变大）的圆圈 第二个圆 */
-#shenzhen_point .pulse1 {
+.pulse1 {
     position: absolute;
-    left: -50%;
-    top: -50%;
+    left: -18px;
+    top: -17px;
     width: 35px;
     height: 35px;
     border: 1px solid red;
