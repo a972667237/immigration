@@ -48,7 +48,7 @@ header .header_outer{
   display: inline-block;
   width: 45%;
   height: 100%;
-  background-color: black;
+  background-color: #7a023c;
   opacity: 0.6;
 }
 
@@ -56,8 +56,8 @@ header .header_outer{
   display: inline-block;
   width: 0;
   height: 0;
-  border-left: 45vh solid black;
-  border-bottom: 50vh solid black;
+  border-left: 45vh solid #7a023c;
+  border-bottom: 50vh solid #7a023c;
   border-top: 50vh solid transparent;
   border-right: 45vh solid transparent;
   opacity: 0.6;
@@ -76,15 +76,15 @@ header .header_outer{
   display: inline-block;
   width: 43%;
   height: 100%;
-  background-color: black;
+  background-color: #7a023c;
 }
 
 .cover_front .cover_front_second{
   display: inline-block;
   width: 0;
   height: 0;
-  border-left: 42vh solid black;
-  border-bottom: 50vh solid black;
+  border-left: 42vh solid #7a023c;
+  border-bottom: 50vh solid #7a023c;
   border-top: 50vh solid transparent;
   border-right: 42vh solid transparent;
 }
@@ -272,14 +272,14 @@ form .field .label{
 
 @media screen and (max-width: 1600px){
   .cover_end .cover_end_second{
-    border-left: 40vh solid black;
-    border-bottom: 50vh solid black;
+    border-left: 40vh solid #7a023c;
+    border-bottom: 50vh solid #7a023c;
     border-top: 50vh solid transparent;
     border-right: 40vh solid transparent;
   }
   .cover_front .cover_front_second{
-    border-left: 37vh solid black;
-    border-bottom: 50vh solid black;
+    border-left: 37vh solid #7a023c;
+    border-bottom: 50vh solid #7a023c;
     border-top: 50vh solid transparent;
     border-right: 37vh solid transparent;
   }
@@ -287,14 +287,14 @@ form .field .label{
 
 @media screen and (max-width: 1450px){
   .cover_end .cover_end_second{
-    border-left: 35vh solid black;
-    border-bottom: 50vh solid black;
+    border-left: 35vh solid #7a023c;
+    border-bottom: 50vh solid #7a023c;
     border-top: 50vh solid transparent;
     border-right: 35vh solid transparent;
   }
   .cover_front .cover_front_second{
-    border-left: 32vh solid black;
-    border-bottom: 50vh solid black;
+    border-left: 32vh solid #7a023c;
+    border-bottom: 50vh solid #7a023c;
     border-top: 50vh solid transparent;
     border-right: 32vh solid transparent;
   }
@@ -302,14 +302,14 @@ form .field .label{
 
 @media screen and (max-width: 1250px){
   .cover_end .cover_end_second{
-    border-left: 30vh solid black;
-    border-bottom: 50vh solid black;
+    border-left: 30vh solid #7a023c;
+    border-bottom: 50vh solid #7a023c;
     border-top: 50vh solid transparent;
     border-right: 30vh solid transparent;
   }
   .cover_front .cover_front_second{
-    border-left: 27vh solid black;
-    border-bottom: 50vh solid black;
+    border-left: 27vh solid #7a023c;
+    border-bottom: 50vh solid #7a023c;
     border-top: 50vh solid transparent;
     border-right: 27vh solid transparent;
   }
@@ -317,14 +317,14 @@ form .field .label{
 
 @media screen and (max-width: 1050px){
   .cover_end .cover_end_second{
-    border-left: 12.5vh solid black;
-    border-bottom: 20vh solid black;
+    border-left: 12.5vh solid #7a023c;
+    border-bottom: 20vh solid #7a023c;
     border-top: 20vh solid transparent;
     border-right: 12.5vh solid transparent;
   }
   .cover_front .cover_front_second{
-    border-left: 11vh solid black;
-    border-bottom: 20vh solid black;
+    border-left: 11vh solid #7a023c;
+    border-bottom: 20vh solid #7a023c;
     border-top: 20vh solid transparent;
     border-right: 11vh solid transparent;
   }
