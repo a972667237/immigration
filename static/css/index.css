@@ -22,7 +22,12 @@ header .header_outer{
 }
 
 .video_descript{
-  max-width: 40%;
+  margin-top: 88px;
+  max-width: 41%;
+}
+
+h2{
+	font-size: 150%;
 }
 
 .video_descript p {
@@ -32,6 +37,10 @@ header .header_outer{
 .header_outer .header_background{
   width: 100%;
   height: 100%;
+}
+
+.card_desc a{
+	display: none;
 }
 
 .cover_end{
@@ -46,9 +55,9 @@ header .header_outer{
 
 .cover_end .cover_end_first{
   display: inline-block;
-  width: 45%;
+  width: 40%;
   height: 100%;
-  background-color: #7a023c;
+  background-color: #180F0A;
   opacity: 0.6;
 }
 
@@ -56,8 +65,8 @@ header .header_outer{
   display: inline-block;
   width: 0;
   height: 0;
-  border-left: 45vh solid #7a023c;
-  border-bottom: 50vh solid #7a023c;
+  border-left: 45vh solid #180F0A;
+  border-bottom: 50vh solid #180F0A;
   border-top: 50vh solid transparent;
   border-right: 45vh solid transparent;
   opacity: 0.6;
@@ -74,17 +83,17 @@ header .header_outer{
 
 .cover_front .cover_front_first{
   display: inline-block;
-  width: 43%;
+  width: 37%;
   height: 100%;
-  background-color: #7a023c;
+  background-color: #180F0A;
 }
 
 .cover_front .cover_front_second{
   display: inline-block;
   width: 0;
   height: 0;
-  border-left: 42vh solid #7a023c;
-  border-bottom: 50vh solid #7a023c;
+  border-left: 42vh solid #180F0A;
+  border-bottom: 50vh solid #180F0A;
   border-top: 50vh solid transparent;
   border-right: 42vh solid transparent;
 }
@@ -100,7 +109,7 @@ header .header_outer{
   width: 40%;
   font-size: 48px;
   padding: 32px 0 0 1em;
-  margin-bottom: 64px;
+  margin-bottom: 128px;
 }
 
 .cover_front .logo a{
@@ -109,8 +118,9 @@ header .header_outer{
 }
 
 #my-video{
-  width: 40%;
-  max-height: 40vh;
+  width: 41%;
+  max-height: 35vh;
+  margin-top: 32px;
   margin-left: 48px;
 }
 
@@ -118,7 +128,7 @@ header .header_outer{
 .cover_front .cover_front_third .video_descript{
   font-size: 18px;
   padding-left: 48px;
-  padding-top: 12px;
+  padding-top: 32px;
   color: white;
   font-family: "Microsoft YaHei";
 }
@@ -130,7 +140,7 @@ display:none;
 .hamburger .hamburger__icon,
 .hamburger .hamburger__icon:before,
 .hamburger .hamburger__icon:after {
-    background-color: red;
+    background-color: white;
 }
 
 main{
@@ -142,11 +152,13 @@ main .card_place{
   width: 100%;
   border-bottom: 1px solid #e6e3dc;
   margin-bottom: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 32px !important;
 }
 
 .card{
   margin: 20px 0;	
+  min-width: 344px;
+  min-height: 180px;
 }
 
 .about_card .australia_card{
@@ -224,8 +236,7 @@ main .card_place{
   padding-top: 1%;
   padding-bottom: 1%;
   text-indent: 2em;
-  background: url('/static/imgs/contact_bot.jpeg') no-repeat;
-  background-size: 100%;
+  background-color: #180F0A;
   color: white;
   line-height: 1.5em;
 }
@@ -240,6 +251,7 @@ footer .form_outer{
   color: white;
   width: 100%;
   background-image: url(/static/imgs/GazeBurt-Newsletter-sign-up-background.jpg);
+  background-size: 100%;
   border-bottom:1px solid rgb(233, 234, 238);
   text-indent: 1em;
 }
@@ -272,14 +284,14 @@ form .field .label{
 
 @media screen and (max-width: 1600px){
   .cover_end .cover_end_second{
-    border-left: 40vh solid #7a023c;
-    border-bottom: 50vh solid #7a023c;
+    border-left: 40vh solid #180F0A;
+    border-bottom: 50vh solid #180F0A;
     border-top: 50vh solid transparent;
     border-right: 40vh solid transparent;
   }
   .cover_front .cover_front_second{
-    border-left: 37vh solid #7a023c;
-    border-bottom: 50vh solid #7a023c;
+    border-left: 37vh solid #180F0A;
+    border-bottom: 50vh solid #180F0A;
     border-top: 50vh solid transparent;
     border-right: 37vh solid transparent;
   }
@@ -287,14 +299,14 @@ form .field .label{
 
 @media screen and (max-width: 1450px){
   .cover_end .cover_end_second{
-    border-left: 35vh solid #7a023c;
-    border-bottom: 50vh solid #7a023c;
+    border-left: 35vh solid #180F0A;
+    border-bottom: 50vh solid #180F0A;
     border-top: 50vh solid transparent;
     border-right: 35vh solid transparent;
   }
   .cover_front .cover_front_second{
-    border-left: 32vh solid #7a023c;
-    border-bottom: 50vh solid #7a023c;
+    border-left: 32vh solid #180F0A;
+    border-bottom: 50vh solid #180F0A;
     border-top: 50vh solid transparent;
     border-right: 32vh solid transparent;
   }
@@ -302,14 +314,14 @@ form .field .label{
 
 @media screen and (max-width: 1250px){
   .cover_end .cover_end_second{
-    border-left: 30vh solid #7a023c;
-    border-bottom: 50vh solid #7a023c;
+    border-left: 30vh solid #180F0A;
+    border-bottom: 50vh solid #180F0A;
     border-top: 50vh solid transparent;
     border-right: 30vh solid transparent;
   }
   .cover_front .cover_front_second{
-    border-left: 27vh solid #7a023c;
-    border-bottom: 50vh solid #7a023c;
+    border-left: 27vh solid #180F0A;
+    border-bottom: 50vh solid #180F0A;
     border-top: 50vh solid transparent;
     border-right: 27vh solid transparent;
   }
@@ -317,14 +329,14 @@ form .field .label{
 
 @media screen and (max-width: 1050px){
   .cover_end .cover_end_second{
-    border-left: 12.5vh solid #7a023c;
-    border-bottom: 20vh solid #7a023c;
+    border-left: 12.5vh solid #180F0A;
+    border-bottom: 20vh solid #180F0A;
     border-top: 20vh solid transparent;
     border-right: 12.5vh solid transparent;
   }
   .cover_front .cover_front_second{
-    border-left: 11vh solid #7a023c;
-    border-bottom: 20vh solid #7a023c;
+    border-left: 11vh solid #180F0A;
+    border-bottom: 20vh solid #180F0A;
     border-top: 20vh solid transparent;
     border-right: 11vh solid transparent;
   }
@@ -375,6 +387,11 @@ form .field .label{
   }
   form {
     width: 80%;
+  }
+  .card{
+	  min-width: 0;
+	  min-height: 0;
+
   }
 }
 
