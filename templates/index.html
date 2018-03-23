@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/static/css/jquery.fatNav.min.css">
     <link href="/static/css/video-js.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/map.css">
   </head>
   <body>
     <!-- contain video and logo -->
@@ -40,12 +41,12 @@
                 NewSight&China
               </a>
             </div>
-            <video id="my-video" class="video-js vjs-big-play-centered vjs-default-skin" controls preload="auto" data-setup='{"autoplay": "true"}'  >
+            <video id="my-video" class="video-js vjs-big-play-centered vjs-default-skin" controls preload="auto" data-setup='{"autoplay": "false"}'>
               <source src="/static/video/ow.mp4" type='video/mp4'>
             </video>
             <div class="video_descript">
               视频介绍： <br>
-              你是个好视频
+              <p>新西兰是一个以热情和友善而享誉全球的国家。全国居民共有400万，英国移民后裔约占人口的74%，当地民族毛利人约占15%，多聚居于偏僻地区。新西兰是一个有着多种宗教的国家，每一个新西兰人可以自由选择宗教信仰。</p>
             </div>
           </div>
         </div>
@@ -173,6 +174,25 @@
 
       <div class="map_place">
         <img src="/static/imgs/map.png">
+          <div class="point_wrap">
+              <div class="map_point" id="shenzhen_point">
+                <div class="pulse"></div>
+                <div class="pulse1"></div>
+              </div>
+              <div class="map_point" id="xiamen_point">
+
+              </div>
+              <div class="map_point" id="wuxi_point"></div>
+              <div class="map_point" id="chengdu_point"></div>
+              <div class="map_point" id="beijing_point"></div>
+              <div class="map_point" id="langfang_point"></div>
+              <div class="map_point" id="taiyuan_point"></div>
+              <div class="map_point" id="qingdao_point"></div>
+              <div class="map_point" id="moerben_point"></div>
+              <div class="map_point" id="xini_point"></div>
+              <div class="map_point" id="aokelan_point"></div>
+              <div class="map_point" id="duolunduo_point"></div>
+          </div>
       </div>
     </main>
     <!-- form and contact -->

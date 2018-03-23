@@ -21,6 +21,14 @@ header .header_outer{
   position: relative;
 }
 
+.video_descript{
+  max-width: 40%;
+}
+
+.video_descript p {
+  text-indent: 2em;
+}
+
 .header_outer .header_background{
   width: 100%;
   height: 100%;
@@ -231,7 +239,7 @@ main .card_place{
 footer .form_outer{
   color: white;
   width: 100%;
-  background-image: url(http://180rh8g1u2xxxopp3e1u6mz0.wpengine.netdna-cdn.com/wp-content/uploads/2016/08/GazeBurt-Newsletter-sign-up-background.jpg?id=49);
+  background-image: url(/static/imgs/GazeBurt-Newsletter-sign-up-background.jpg);
   border-bottom:1px solid rgb(233, 234, 238);
   text-indent: 1em;
 }

@@ -1,0 +1,251 @@
+.point_wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.map_place{
+    position: relative;
+}
+
+.map_point{
+    position: absolute;
+    border: 5px solid red;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+}
+
+.map_point:after{
+    position: absolute;
+    display: inline-block;
+    width: 4em;
+    font-size: 12px;
+    top: -0.8em;
+}
+
+.map_point:before{
+    position: absolute;
+    display: inline-block;
+    width: 4em;
+    font-size: 12px;
+    top: -0.8em;
+    left: -4em;
+}
+
+
+#shenzhen_point{
+    left: 78%;
+    top: 42%;
+}
+
+#shenzhen_point:after{
+    content: "深圳";
+}
+
+#duolunduo_point{
+    left: 26%;
+    top: 27%;
+}
+
+#duolunduo_point:after{
+    content: "多伦多";
+}
+
+#xiamen_point{
+    left: 79%;
+    top: 40%;
+}
+
+#xiamen_point:after{
+    content: "厦门";
+}
+
+#wuxi_point{
+    left: 80%;
+    top: 37%;
+}
+
+#wuxi_point:after{
+    content: "无锡";
+}
+
+#qingdao_point{
+    left: 79.5%;
+    top: 35%;
+}
+
+#qingdao_point:before{
+    content: "青岛";
+}
+
+#taiyuan_point{
+    left: 77.5%;
+    top: 33%;
+}
+
+#taiyuan_point:after{
+    content: "太原";
+}
+
+#chengdu_point{
+    top: 38.5%;
+    left: 74.5%;
+}
+
+#chengdu_point:after{
+    content: "成都";
+}
+
+#langfang_point{
+    left: 79%;
+    top: 31%;
+}
+
+#langfang_point:before{
+    content: "廊坊";
+}
+
+#beijing_point{
+    left: 80%;
+    top: 29.5%;
+}
+#beijing_point:after{
+    content: "北京";
+}
+
+#xini_point{
+    left: 88.5%;
+    top: 78%;
+}
+
+#xini_point:after{
+    content: "悉尼";
+}
+
+#moerben_point{
+    left: 87.5%;
+    top: 83%;
+}
+
+#moerben_point:after{
+    content: "墨尔本";
+}
+
+#aokelan_point{
+    left: 95.5%;
+    top: 86.5%;
+}
+
+#aokelan_point:after{
+    content: "奥克兰";
+}
+
+
+@keyframes warn {
+0% {
+transform: scale(0.3);
+-webkit-transform: scale(0.3);
+opacity: 0.0;
+}
+
+25% {
+transform: scale(0.3);
+-webkit-transform: scale(0.3);
+opacity: 0.1;
+}
+
+50% {
+transform: scale(0.5);
+-webkit-transform: scale(0.5);
+opacity: 0.3;
+}
+
+75% {
+transform: scale(0.8);
+-webkit-transform: scale(0.8);
+opacity: 0.5;
+}
+
+100% {
+transform: scale(1);
+-webkit-transform: scale(1);
+opacity: 0.0;
+}
+}
+
+@keyframes warn1 {
+0% {
+transform: scale(0.3);
+-webkit-transform: scale(0.3);
+opacity: 0.0;
+}
+
+25% {
+transform: scale(0.3);
+-webkit-transform: scale(0.3);
+opacity: 0.1;
+}
+
+50% {
+transform: scale(0.3);
+-webkit-transform: scale(0.3);
+opacity: 0.3;
+}
+
+75% {
+transform: scale(0.5);
+-webkit-transform: scale(0.5);
+opacity: 0.5;
+}
+
+100% {
+transform: scale(0.8);
+-webkit-transform: scale(0.8);
+opacity: 0.0;
+}
+}
+
+#shenzhen_point .pulse {
+    position: absolute;
+    left: -50%;
+    top: -50%;
+
+    width: 35px;
+    height: 35px;
+    border: 1px solid red;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-animation: warn 2s ease-out;
+    -moz-animation: warn 2s ease-out;
+    animation: warn 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+/* 产生动画（向外扩散变大）的圆圈 第二个圆 */
+#shenzhen_point .pulse1 {
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 35px;
+    height: 35px;
+    border: 1px solid red;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-animation: warn1 2s ease-out;
+    -moz-animation: warn1 2s ease-out;
+    animation: warn1 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
