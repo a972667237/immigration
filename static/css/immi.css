@@ -1,4 +1,6 @@
-
+main p, main span {
+    text-align: center !important;
+}
 
 .immi_place{
     display: block;
