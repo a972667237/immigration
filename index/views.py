@@ -3,23 +3,36 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import *
 # Create your views here.
+
+COVER_MAP = {
+    "article": ["australia_culture.jpg", "newzeland.jpg", "canada_culture.jpg", "aust.jpg", "newzeland_jianzhen.jpg", "canada.jpg", "culture_more.jpeg", "culture_more.jpeg", "culture_more.jpeg", "australia.jpg", "newzeland.jpg", "canada.jpg"],
+    "expert": "people.jpeg",
+    "culture": "culture_more.jpeg",
+    "contact": "contact_more.jpg",
+    "about": "about.jpeg"
+}
+
 def index(requests):
     article = Article.objects.all()
     return render(requests, 'index.html', locals())
 
 
 def expert(requests):
-    return render(requests, 'expert.html')
+    img = COVER_MAP.get("expert")
+    return render(requests, 'expert.html', locals())
 
 def about(requests):
-    return render(requests, 'about.html')
+    img = COVER_MAP.get("about")
+    return render(requests, 'about.html', locals())
 
 def culturl(requests):
+    img = COVER_MAP.get("culture")
     article = Article.objects.all()
     return render(requests, 'culture.html', locals())
 
 def contact(requests):
-    return render(requests, 'contact.html')
+    img = COVER_MAP.get("contact")
+    return render(requests, 'contact.html', locals())
 
 
 def article(requests):
@@ -28,6 +41,7 @@ def article(requests):
         article_id = int(article_id)
     except:
         article_id = 1
+    img = COVER_MAP.get("article")[article_id-1]
     if article_id == 4:
         return render(requests, 'australia_knowledge.html', locals())
     if article_id == 5:

@@ -14,17 +14,17 @@ main{
 }
 
 .culture_card .australia_card{
-  background: url('/static/imgs/australia_culture.jpg');
+  background: url('/static/imgs/australia_index.jpeg');
   background-size: 100% 100%;
 }
 
 .culture_card .newzeland_card{
-  background: url('/static/imgs/newzeland_culture.jpg');
+  background: url('/static/imgs/newzeland_index.jpeg');
   background-size: 100% 100%;
 }
 
 .culture_card .canada_card{
-  background: url('/static/imgs/canada_culture.jpg');
+  background: url('/static/imgs/canada_index.jpeg');
   background-size: 100% 100%;
 }
 
