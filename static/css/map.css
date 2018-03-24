@@ -35,175 +35,242 @@
     left: -4em;
 }
 
-
-#shenzhen_point{
-    left: 78%;
-    top: 42%;
+img{
+    width: 100%;
 }
+
+
+
 
 #shenzhen_point:after{
     content: "深圳";
-}
-
-#duolunduo_point{
-    left: 26%;
-    top: 27%;
 }
 
 #duolunduo_point:after{
     content: "多伦多";
 }
 
-#xiamen_point{
-    left: 79%;
-    top: 40%;
-}
-
 #xiamen_point:after{
     content: "厦门";
-}
-
-#wuxi_point{
-    left: 80%;
-    top: 37%;
 }
 
 #wuxi_point:after{
     content: "无锡";
 }
 
-#qingdao_point{
-    left: 79.5%;
-    top: 35%;
-}
-
 #qingdao_point:before{
     content: "青岛";
 }
 
-#taiyuan_point{
-    left: 77.5%;
-    top: 33%;
-}
-
-#taiyuan_point:after{
+#taiyuan_point:before{
     content: "太原";
-}
-
-#chengdu_point{
-    top: 38.5%;
-    left: 74.5%;
 }
 
 #chengdu_point:after{
     content: "成都";
 }
 
-#langfang_point{
-    left: 79%;
-    top: 31%;
-}
-
-#langfang_point:before{
+#langfang_point:after{
     content: "廊坊";
 }
 
-#beijing_point{
-    left: 80%;
-    top: 29.5%;
-}
 #beijing_point:after{
     content: "北京";
-}
-
-#xini_point{
-    left: 88.5%;
-    top: 78%;
 }
 
 #xini_point:after{
     content: "悉尼";
 }
 
-#moerben_point{
-    left: 87.5%;
-    top: 83%;
-}
-
 #moerben_point:after{
     content: "墨尔本";
 }
 
-#aokelan_point{
-    left: 95.5%;
-    top: 86.5%;
-}
 
 #aokelan_point:after{
     content: "奥克兰";
 }
 
+/*#shenzhen_point{*/
+    /*left: 78%;*/
+    /*top: 42%;*/
+/*}*/
+
+/*#duolunduo_point{*/
+    /*left: 26%;*/
+    /*top: 27%;*/
+/*}*/
+
+/*#xiamen_point{*/
+    /*left: 79%;*/
+    /*top: 40%;*/
+/*}*/
+
+/*#wuxi_point{*/
+    /*left: 80%;*/
+    /*top: 37%;*/
+/*}*/
+
+/*#qingdao_point{*/
+    /*left: 79.5%;*/
+    /*top: 35%;*/
+/*}*/
+
+/*#taiyuan_point{*/
+    /*left: 77.5%;*/
+    /*top: 33%;*/
+/*}*/
+
+/*#chengdu_point{*/
+    /*top: 38.5%;*/
+    /*left: 74.5%;*/
+/*}*/
+
+/*#langfang_point{*/
+    /*left: 79%;*/
+    /*top: 31%;*/
+/*}*/
+
+/*#beijing_point{*/
+    /*left: 80%;*/
+    /*top: 29.5%;*/
+/*}*/
+
+/*#xini_point{*/
+    /*left: 88.5%;*/
+    /*top: 78%;*/
+/*}*/
+
+/*#moerben_point{*/
+    /*left: 87.5%;*/
+    /*top: 83%;*/
+/*}*/
+
+/*#aokelan_point{*/
+    /*left: 95.5%;*/
+    /*top: 86.5%;*/
+/*}*/
+
+#shenzhen_point{
+    left: 38%;
+    top: 43%;
+}
+
+#duolunduo_point{
+    left: 78%;
+    top: 28%;
+}
+
+#xiamen_point{
+    left: 39%;
+    top: 41%;
+}
+
+#wuxi_point{
+    left: 39.5%;
+    top: 38%;
+}
+
+#qingdao_point{
+    left: 39.5%;
+    top: 35%;
+}
+
+#taiyuan_point{
+    left: 37.5%;
+    top: 33.5%;
+}
+
+#chengdu_point{
+    top: 39.5%;
+    left: 34.5%;
+}
+
+#langfang_point{
+    left: 39%;
+    top: 34%;
+}
+
+#beijing_point{
+    left: 38.8%;
+    top: 32.5%;
+}
+
+#xini_point{
+    left: 48%;
+    top: 78%;
+}
+
+#moerben_point{
+    left: 46.5%;
+    top: 80.5%;
+}
+
+#aokelan_point{
+    left: 54.5%;
+    top: 80%;
+}
 
 @keyframes warn {
 0% {
-transform: scale(0.3);
--webkit-transform: scale(0.3);
+transform: scale(0.5);
+-webkit-transform: scale(0.5);
 opacity: 0.0;
 }
 
 25% {
-transform: scale(0.3);
--webkit-transform: scale(0.3);
+transform: scale(0.5);
+-webkit-transform: scale(0.5);
 opacity: 0.1;
 }
 
 50% {
-transform: scale(0.5);
--webkit-transform: scale(0.5);
+transform: scale(0.8);
+-webkit-transform: scale(0.8);
 opacity: 0.3;
 }
 
 75% {
-transform: scale(0.8);
--webkit-transform: scale(0.8);
+transform: scale(1.1);
+-webkit-transform: scale(1.1);
 opacity: 0.5;
 }
 
 100% {
-transform: scale(1);
--webkit-transform: scale(1);
+transform: scale(1.4);
+-webkit-transform: scale(1.4);
 opacity: 0.0;
 }
 }
 
 @keyframes warn1 {
 0% {
-transform: scale(0.3);
--webkit-transform: scale(0.3);
+transform: scale(0.5);
+-webkit-transform: scale(0.5);
 opacity: 0.0;
 }
 
 25% {
-transform: scale(0.3);
--webkit-transform: scale(0.3);
+transform: scale(0.5);
+-webkit-transform: scale(0.5);
 opacity: 0.1;
 }
 
 50% {
-transform: scale(0.3);
--webkit-transform: scale(0.3);
+transform: scale(0.5);
+-webkit-transform: scale(0.5);
 opacity: 0.3;
 }
 
 75% {
-transform: scale(0.5);
--webkit-transform: scale(0.5);
+transform: scale(0.8);
+-webkit-transform: scale(0.8);
 opacity: 0.5;
 }
 
 100% {
-transform: scale(0.8);
--webkit-transform: scale(0.8);
+transform: scale(1.1);
+-webkit-transform: scale(1.1);
 opacity: 0.0;
 }
 }

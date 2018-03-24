@@ -161,48 +161,84 @@ main .card_place{
   min-height: 180px;
 }
 
+.australia_card:before{
+  content: "";
+  background: url('/static/imgs/australia-before.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+}
+
+.newzeland_card:before{
+  content: "";
+  background: url('/static/imgs/newzeland_before.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+}
+
+.canada_card:before{
+  content: "";
+  background: url('/static/imgs/canada-before.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+}
+
 .about_card .australia_card{
-  background: url('/static/imgs/australia.png');
+  background: url('/static/imgs/australia.jpg');
   background-size: 100% 100%;
 }
 
 .about_card .newzeland_card{
-  background: url('/static/imgs/newzeland.png');
+  background: url('/static/imgs/newzeland.jpg');
   background-size: 100% 100%;
 }
 
 .about_card .canada_card{
-  background: url('/static/imgs/canada.png');
+  background: url('/static/imgs/canada.jpg');
   background-size: 100% 100%;
 }
 
 .culture_card .australia_card{
-  background: url('/static/imgs/australia_culture.png');
+  background: url('/static/imgs/australia_culture.jpg');
   background-size: 100% 100%;
 }
 
 .culture_card .newzeland_card{
-  background: url('/static/imgs/newzeland_culture.png');
+  background: url('/static/imgs/newzeland_culture.jpg');
   background-size: 100% 100%;
 }
 
 .culture_card .canada_card{
-  background: url('/static/imgs/canada_culture.png');
+  background: url('/static/imgs/canada_culture.jpg');
   background-size: 100% 100%;
 }
 
 .guide_card .australia_card{
-  background: url('/static/imgs/australia_guide.png');
+  background: url('/static/imgs/australia_guide.jpg');
   background-size: 100% 100%;
 }
 
 .guide_card .newzeland_card{
-  background: url('/static/imgs/newzeland_guide.png');
+  background: url('/static/imgs/newzeland_guide.jpg');
   background-size: 100% 100%;
 }
 
 .guide_card .canada_card{
-  background: url('/static/imgs/canada_guide.png');
+  background: url('/static/imgs/canada_guide.jpg');
   background-size: 100% 100%;
 }
 
