@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index~</title>
+    <meta name="description" content="{{ spiderInfo.description }}">
+    <meta name="keywords" content="{{ spiderInfo.keywords }}">
+    <title>NewSight & China （ 新景 ） 加拿大移民 · 新西兰移民 · 澳大利亚移民</title>
     <link rel="stylesheet" href="/static/css/bulma.css">
     <link rel="stylesheet" href="/static/css/animate.css">
     <link rel="stylesheet" href="/static/css/jquery.fatNav.min.css">
@@ -43,11 +45,11 @@
               </a>
             </div>
             <video id="my-video" class="video-js vjs-big-play-centered vjs-default-skin" controls preload="auto" data-setup='{"autoplay": "false"}'>
-              <source src="/static/video/ow.mp4" type='video/mp4'>
+              <source src="/media/{{ video.video }}" type='video/mp4'>
             </video>
             <div class="video_descript">
               视频介绍： <br>
-              <p>新西兰是一个以热情和友善而享誉全球的国家。全国居民共有400万，英国移民后裔约占人口的74%，当地民族毛利人约占15%，多聚居于偏僻地区。新西兰是一个有着多种宗教的国家，每一个新西兰人可以自由选择宗教信仰。</p>
+              <p>{{ video.description }}</p>
             </div>
           </div>
         </div>

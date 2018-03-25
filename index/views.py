@@ -14,28 +14,35 @@ COVER_MAP = {
 
 def index(requests):
     article = Article.objects.all()
+    spiderInfo = Spider_info.objects.all()[0]
+    video = Video.objects.get(pk=1)
     return render(requests, 'index.html', locals())
 
 
 def expert(requests):
+    spiderInfo = Spider_info.objects.all()[0]
     img = COVER_MAP.get("expert")
     return render(requests, 'expert.html', locals())
 
 def about(requests):
+    spiderInfo = Spider_info.objects.all()[0]
     img = COVER_MAP.get("about")
     return render(requests, 'about.html', locals())
 
 def culturl(requests):
+    spiderInfo = Spider_info.objects.all()[0]
     img = COVER_MAP.get("culture")
     article = Article.objects.all()
     return render(requests, 'culture.html', locals())
 
 def contact(requests):
+    spiderInfo = Spider_info.objects.all()[0]
     img = COVER_MAP.get("contact")
     return render(requests, 'contact.html', locals())
 
 
 def article(requests):
+    spiderInfo = Spider_info.objects.all()[0]
     article_id = requests.GET.get('id', 1)
     try:
         article_id = int(article_id)
