@@ -3,8 +3,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 from DjangoUeditor.models import UEditorField
-
-# Create your models here.
+from util import path_and_rename
 
 class Article(models.Model):
     title = models.CharField(u'标题', max_length=100)
@@ -32,3 +31,10 @@ class Info(models.Model):
 
     def __unicode__(self):
         return self.name + "/" + self.create_date.strftime('%Y-%m-%d') + "/" + (u"已读" if self.isRead else u"未读")
+
+class Video(models.Model):
+    video = models.FileField(u'上传视频，要求mp4格式', upload_to=path_and_rename("./"))
+    description = models.CharField(u'视频描述', max_length=1000)
+    class Meta:
+        verbose_name = '视频'
+	verbose_name_plural = verbose_name
