@@ -167,7 +167,7 @@ main .card_place{
 
 .about_card .australia_card:before{
   content: "";
-  background: url('/static/imgs/australia-before.png') no-repeat;
+  background: url('/static/imgs/australia-before.jpg.png') no-repeat;
   background-size: 100%;
   position: absolute;
   top: 10px;

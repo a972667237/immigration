@@ -36,8 +36,8 @@ img{
     margin: 0 auto !important;
 }
 
-.detail-place:last-child{
-    margin-left: 30px;
+.detail-place .is-parent:last-child{
+    margin-left: 25px;
 }
 
 .gray-p {
