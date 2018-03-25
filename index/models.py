@@ -10,6 +10,7 @@ class Article(models.Model):
     description = models.TextField(u'简介', max_length=1000)
     content = UEditorField(u'内容', max_length=200000)
     date = models.DateField(u'创建时间', auto_now_add=True, editable=True)
+    cover = models.ImageField(u'封面图片', upload_to=upload_video_cover, default="/static/imgs/canada.jpg")
     class Meta:
         verbose_name = u'文章'
         verbose_name_plural = verbose_name
