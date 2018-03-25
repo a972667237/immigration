@@ -161,6 +161,8 @@ main .card_place{
   min-height: 180px;
 }
 
+
+
 .australia_card:before{
   content: "";
   background: url('/static/imgs/australia-before.png') no-repeat;
@@ -169,8 +171,8 @@ main .card_place{
   top: 10px;
   left: 10px;
   z-index: 100;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .newzeland_card:before{
@@ -178,11 +180,11 @@ main .card_place{
   background: url('/static/imgs/newzeland_before.png') no-repeat;
   background-size: 100%;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 5px;
+  left: 5px;
   z-index: 100;
   width: 50px;
-  height: 50px;
+  height: 30px;
 }
 
 .canada_card:before{
@@ -193,9 +195,41 @@ main .card_place{
   top: 10px;
   left: 10px;
   z-index: 100;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
+
+/*.australia_card:after{
+  content: "澳大利亚";
+  position: absolute;
+  min-width: 5em;
+  z-index: 100;
+  top: 12.5px;
+  left: 40px;
+  color: white;
+}
+
+.newzeland_card:after{
+  content: "新西兰";
+  position: absolute;
+  min-width: 5em;
+  z-index: 100;
+  top: 12.5px;
+  left: 40px;
+  color: white;
+}
+
+
+.canada_card:after{
+  content: "加拿大";
+  position: absolute;
+  min-width: 5em;
+  z-index: 100;
+  top: 12.5px;
+  left: 40px;
+  color: white;
+}*/
+
 
 .about_card .australia_card{
   background: url('/static/imgs/australia.jpg');
