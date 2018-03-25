@@ -39,8 +39,12 @@ h2{
   height: 100%;
 }
 
-.card_desc a{
+.about_card .card_desc a{
 	display: none;
+}
+
+.culture_card .card_desc p, .guide_card .card_desc p {
+  display: none;
 }
 
 .cover_end{
@@ -155,15 +159,13 @@ main .card_place{
   padding-bottom: 32px !important;
 }
 
-.card{
-  margin: 20px 0;	
-  min-width: 344px;
-  min-height: 180px;
+.mycard{
+  margin: 20px 0;
 }
 
 
 
-.australia_card:before{
+.about_card .australia_card:before{
   content: "";
   background: url('/static/imgs/australia-before.png') no-repeat;
   background-size: 100%;
@@ -175,7 +177,7 @@ main .card_place{
   height: 30px;
 }
 
-.newzeland_card:before{
+.about_card .newzeland_card:before{
   content: "";
   background: url('/static/imgs/newzeland_before.png') no-repeat;
   background-size: 100%;
@@ -187,7 +189,7 @@ main .card_place{
   height: 30px;
 }
 
-.canada_card:before{
+.about_card .canada_card:before{
   content: "";
   background: url('/static/imgs/canada-before.png') no-repeat;
   background-size: 100%;
@@ -231,54 +233,55 @@ main .card_place{
 }*/
 
 
-.about_card .australia_card{
-  background: url('/static/imgs/australia.jpg');
-  background-size: 100% 100%;
-}
+/*.about_card .australia_card{*/
+  /*background: url('/static/imgs/australia.jpg');*/
+  /*background-size: 100% 100%;*/
+/*}*/
 
-.about_card .newzeland_card{
-  background: url('/static/imgs/newzeland.jpg');
-  background-size: 100% 100%;
-}
+/*.about_card .newzeland_card{*/
+  /*background: url('/static/imgs/newzeland.jpg');*/
+  /*background-size: 100% 100%;*/
+/*}*/
 
-.about_card .canada_card{
-  background: url('/static/imgs/canada.jpg');
-  background-size: 100% 100%;
-}
+/*.about_card .canada_card{*/
+  /*background: url('/static/imgs/canada.jpg');*/
+  /*background-size: 100% 100%;*/
+/*}*/
 
-.culture_card .australia_card{
-  background: url('/static/imgs/australia_culture.jpg');
-  background-size: 100% 100%;
-}
+/*.culture_card .australia_card{*/
+  /*background: url('/static/imgs/australia_culture.jpg');*/
+  /*background-size: 100% 100%;*/
+/*}*/
 
-.culture_card .newzeland_card{
-  background: url('/static/imgs/newzeland_culture.jpg');
-  background-size: 100% 100%;
-}
+/*.culture_card .newzeland_card{*/
+  /*background: url('/static/imgs/newzeland_culture.jpg');*/
+  /*background-size: 100% 100%;*/
+/*}*/
 
-.culture_card .canada_card{
-  background: url('/static/imgs/canada_culture.jpg');
-  background-size: 100% 100%;
-}
+/*.culture_card .canada_card{*/
+  /*background: url('/static/imgs/canada_culture.jpg');*/
+  /*background-size: 100% 100%;*/
+/*}*/
 
-.guide_card .australia_card{
-  background: url('/static/imgs/australia_guide.jpg');
-  background-size: 100% 100%;
-}
+/*.guide_card .australia_card{*/
+  /*background: url('/static/imgs/australia_guide.jpg');*/
+  /*background-size: 100% 100%;*/
+/*}*/
 
-.guide_card .newzeland_card{
-  background: url('/static/imgs/newzeland_guide.jpg');
-  background-size: 100% 100%;
-}
+/*.guide_card .newzeland_card{*/
+  /*background: url('/static/imgs/newzeland_guide.jpg');*/
+  /*background-size: 100% 100%;*/
+/*}*/
 
-.guide_card .canada_card{
-  background: url('/static/imgs/canada_guide.jpg');
-  background-size: 100% 100%;
-}
+/*.guide_card .canada_card{*/
+  /*background: url('/static/imgs/canada_guide.jpg');*/
+  /*background-size: 100% 100%;*/
+/*}*/
 
-.card{
+.mycard{
+  position: relative;
   width: 100%;
-  height: 180px;
+  display: block;
 }
 
 .card_outer{
@@ -458,7 +461,7 @@ form .field .label{
   form {
     width: 80%;
   }
-  .card{
+  .mycard{
 	  min-width: 0;
 	  min-height: 0;
   }

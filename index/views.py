@@ -9,7 +9,7 @@ COVER_MAP = {
     "expert": "people.jpeg",
     "culture": "culture_more.jpeg",
     "contact": "contact_more.jpg",
-    "about": "about.jpeg"
+    "about": "about.jpg"
 }
 
 def index(requests):
