@@ -1,16 +1,10 @@
-import os
+#coding: utf-8
 from uuid import uuid4
-
-def path_and_rename(path):
-    def wrapper(instance, filename):
-        ext = filename.split('.')[-1]
-        # get filename
-        if instance.pk:
-            filename = '{}.{}'.format(instance.pk, ext)
-        else:
-        # set filename as random string
-            filename = '{}.{}'.format(uuid4().hex, ext)
-        # return the whole path to the file
-        return os.path.join(path, filename)
-    return wrapper
-
+from datetime import datetime
+def upload_video_cover(instance,filename):
+    ext = filename.split('.')[-1] #日期目录和 随机文件名
+    filename = '{}.{}'.format(uuid4().hex, ext)
+    year = datetime.now().year
+    month =datetime.now().month
+    day = datetime.now().day #instance 可使用instance.user.id
+    return "./{0}/{1}/{2}/{3}".format(year,month,day,filename)
