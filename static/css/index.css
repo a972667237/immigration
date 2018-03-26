@@ -119,6 +119,17 @@ h2{
 .cover_front .logo a{
   color: white;
   font-family: "garamond";
+  display: inline-block;
+  text-align: right;
+  line-height: 1em;
+}
+
+.cover_front .logo a span{
+  font-size: 50px;
+}
+
+.cover_front .logo a small{
+  font-size: 24px;
 }
 
 #my-video{
