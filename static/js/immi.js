@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 
     $(".panel-heading a").click(function(){
-        let that = this;
+        that = this;
         if($(this).hasClass("disappear")){
             $(".panel-heading a").each(function(){
                 if(that != this)

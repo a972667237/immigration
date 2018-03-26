@@ -336,7 +336,7 @@ footer .form_outer{
   color: white;
   width: 100%;
   background-image: url(/static/imgs/GazeBurt-Newsletter-sign-up-background.jpg);
-  background-size: 100%;
+  background-size: 100% 100%;
   text-indent: 1em;
 }
 .form_outer .user_form{
@@ -476,6 +476,15 @@ form .field .label{
   .mycard{
 	  min-width: 0;
 	  min-height: 0;
+  }
+  .cover_front .logo a{
+    line-height:1;
+  }
+  .cover_front .logo a span {
+    font-size: 16px;
+  }
+  .cover_front .logo a small {
+    font-size: 10px;
   }
 }
 
