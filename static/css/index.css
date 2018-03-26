@@ -121,7 +121,7 @@ h2{
   font-family: "garamond";
   display: inline-block;
   text-align: right;
-  line-height: 1em;
+  line-height: 0.5em;
 }
 
 .cover_front .logo a span{
