@@ -175,7 +175,7 @@ main .card_place{
 }
 
 
-
+/*
 .about_card .australia_card:before{
   content: "";
   background: url('/static/imgs/australia-before.jpg.png') no-repeat;
@@ -211,6 +211,7 @@ main .card_place{
   width: 30px;
   height: 30px;
 }
+	*/
 
 /*.australia_card:after{
   content: "澳大利亚";
