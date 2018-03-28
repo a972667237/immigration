@@ -341,14 +341,21 @@ footer .form_outer{
 
 .form_outer h2{
   font-size:48px;
+  font-weight: 600;
+  line-height: 45px;
 }
 
 .form_outer p{
-  font-size:36px;
+  font-size:44px;
+  line-height: 45px;
+  margin-bottom: 24px;
+  font-weight: 200;
 }
 
 .form_outer p:last-child{
-  font-size:28px;
+  font-size:17px;
+  line-height: 1em;
+  margin-bottom: 0;
 }
 
 .form_outer .user_form{
@@ -394,6 +401,10 @@ form .field .label{
     border-top: 50vh solid transparent;
     border-right: 37vh solid transparent;
   }
+  .video_descript{
+  margin-top: 68px;
+  max-width: 41%;
+  }
 }
 
 @media screen and (max-width: 1450px){
@@ -409,7 +420,12 @@ form .field .label{
     border-top: 50vh solid transparent;
     border-right: 32vh solid transparent;
   }
+  .video_descript{
+  margin-top: 48px;
+  max-width: 41%;
 }
+}
+
 
 @media screen and (max-width: 1250px){
   .cover_end .cover_end_second{
@@ -424,6 +440,10 @@ form .field .label{
     border-top: 50vh solid transparent;
     border-right: 27vh solid transparent;
   }
+  .video_descript{
+  margin-top: 28px;
+  max-width: 41%;
+}
 }
 
 @media screen and (max-width: 1050px){
