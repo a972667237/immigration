@@ -50,6 +50,13 @@ h2{
   width: 50px;
 }
 
+.hamburger.active .hamburger__icon:after {
+    -moz-transform: translateY(-10px)rotate(-45deg);
+    -ms-transform: translateY(-10px)rotate(-45deg);
+    -webkit-transform: translateY(-10px)rotate(-45deg);
+    transform: translateY(-10px)rotate(-45deg);
+}
+
 .video_descript p {
   text-indent: 2em;
 }
@@ -378,6 +385,8 @@ footer .form_outer{
     line-height: 1em;
     margin-bottom: 0;
 }
+
+
 
 .form_outer .user_form{
   width: 80%;
