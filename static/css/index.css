@@ -30,6 +30,11 @@ h2{
 	font-size: 150%;
 }
 
+
+.hamburger__icon, .hamburger__icon:after, .hamburger__icon:before{
+  width: 50px;
+}
+
 .video_descript p {
   text-indent: 2em;
 }

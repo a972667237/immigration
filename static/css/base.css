@@ -90,15 +90,23 @@ footer .form_outer{
 
 .form_outer h2{
   font-size:48px;
+  font-weight: 600;
+  line-height: 45px;
 }
 
 .form_outer p{
-  font-size:36px;
+  font-size:44px;
+  line-height: 45px;
+  margin-bottom: 24px;
+  font-weight: 200;
 }
 
 .form_outer p:last-child{
-  font-size:28px;
+  font-size:17px;
+  line-height: 1em;
+  margin-bottom: 0;
 }
+
 .form_outer .user_form{
   width: 80%;
   margin: 0 auto;
@@ -150,4 +158,21 @@ form .field .label{
 
     width: 80%;
   }
+}
+
+
+.hamburger:after{
+  position: absolute;
+  content: "menu";
+    color: white;
+    font-size: 20px;
+    left: 12px;
+}
+
+.hamburger__icon:after {
+    top: 10px;
+}
+
+.hamburger__icon:before {
+    top: -10px;
 }
