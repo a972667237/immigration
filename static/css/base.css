@@ -44,6 +44,10 @@ header img{
     top: -10px;
 }
 
+.hamburger__icon, .hamburger__icon:after, .hamburger__icon:before{
+  width: 50px;
+}
+
 .hamburger{
   left: 95%;
   top: 5%;
