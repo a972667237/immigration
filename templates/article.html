@@ -11,3 +11,7 @@
     {% endautoescape %}
     </article>
 {% endblock %}
+
+{% block scripts %}
+    $("img").each(function(){$(this).attr("src", $(this).attr("src").replace(/http:.+:8000/, ""))});
+{% endblock %}
