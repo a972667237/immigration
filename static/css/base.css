@@ -63,6 +63,14 @@ main{
     background-color: white;
 }
 
+.hamburger.active .hamburger__icon:after {
+    -moz-transform: translateY(-10px)rotate(-45deg);
+    -ms-transform: translateY(-10px)rotate(-45deg);
+    -webkit-transform: translateY(-10px)rotate(-45deg);
+    transform: translateY(-10px)rotate(-45deg);
+}
+
+
 .logo{
   width: 40%;
   font-size: 48px;
