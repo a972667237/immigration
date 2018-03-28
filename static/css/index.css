@@ -30,6 +30,21 @@ h2{
 	font-size: 150%;
 }
 
+.hamburger:after{
+  position: absolute;
+  content: "menu";
+    color: white;
+    font-size: 20px;
+    left: 12px;
+}
+
+.hamburger__icon:after {
+    top: 10px;
+}
+
+.hamburger__icon:before {
+    top: -10px;
+}
 
 .hamburger__icon, .hamburger__icon:after, .hamburger__icon:before{
   width: 50px;
