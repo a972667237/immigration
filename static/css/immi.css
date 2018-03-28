@@ -29,6 +29,10 @@ article .panel-block{
     overflow: hidden;
 }
 
+.control{
+        text-align: justify;
+}
+
 .immi_place{
     display: block;
     width: 70%;
@@ -68,4 +72,14 @@ article .panel-block{
         max-width: 80%;
         margin-bottom: 10px;
     }
+}
+
+
+.red_span{
+    font-weight: 600;
+    color: red;
+}
+
+.condition, .advantage{
+    padding-left: 2em;
 }
