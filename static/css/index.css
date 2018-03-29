@@ -380,7 +380,7 @@ footer .form_outer{
 }
 
 .form_outer p:last-child{
-  font-size: 18px;
+  font-size: 17px;
     font-weight: 400;
     line-height: 1em;
     margin-bottom: 0;
@@ -395,7 +395,7 @@ footer .form_outer{
 
 
 .user_form_left{
-  width: 30%;
+  width: 350px;
   text-align: justify;
 }
 form{
@@ -528,8 +528,8 @@ form .field .label{
     display: none;
   }
   .hamburger {
-    left: 90%;
-    top: 5%;
+    left: 80%;
+    top: 2%;
   }
   .user_form_left {
     display: none;

@@ -316,3 +316,9 @@ opacity: 0.0;
     animation-iteration-count: infinite;
 }
 
+ 
+@media screen and (max-width: 1050px){
+  .map_place{
+	  display: none;
+  }
+}
