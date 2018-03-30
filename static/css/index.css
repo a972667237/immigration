@@ -22,7 +22,7 @@ header .header_outer{
 }
 
 .video_descript{
-  margin-top: 58px;
+  margin-top: 52px;
   max-width: 41%;
 }
 
@@ -414,7 +414,7 @@ form .field .label{
 }
 
 .hamburger{
-  left: 95%;
+  left: 90%;
   top: 5%;
 }
 
@@ -432,7 +432,7 @@ form .field .label{
     border-right: 37vh solid transparent;
   }
   .video_descript{
-  margin-top: 48px;
+  margin-top: 42px;
   max-width: 41%;
   }
 }
@@ -451,7 +451,7 @@ form .field .label{
     border-right: 32vh solid transparent;
   }
   .video_descript{
-  margin-top: 38px;
+  margin-top: 32px;
   max-width: 41%;
 }
 }
@@ -471,7 +471,7 @@ form .field .label{
     border-right: 27vh solid transparent;
   }
   .video_descript{
-  margin-top: 28px;
+  margin-top: 22px;
   max-width: 41%;
 }
 }
