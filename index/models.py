@@ -5,6 +5,14 @@ from django.db import models
 from DjangoUeditor.models import UEditorField
 from util import upload_video_cover
 
+
+COUNTRY_LIST = (
+    (1, u'澳大利亚'),
+    (2, u'新西兰'),
+    (3, u'加拿大')
+)
+
+
 class Article(models.Model):
     title = models.CharField(u'标题', max_length=100)
     description = models.TextField(u'简介', max_length=1000)
@@ -50,3 +58,13 @@ class Spider_info(models.Model):
         verbose_name_plural = verbose_name
     def __unicode__(self):
         return u'推广信息'
+
+class Knowledge(models.Model):
+    title = models.CharField(u'标题', max_length=100)
+    content = UEditorField(u'内容', max_length=100000)
+    country = models.IntegerField(u'国家', choices=COUNTRY_LIST)
+    class Meta:
+        verbose_name = "项目知悉"
+        verbose_name_plural = verbose_name
+    def __unicode__(self):
+        return self.title

@@ -27,6 +27,7 @@ def expert(requests):
 def about(requests):
     spiderInfo = Spider_info.objects.all()[0]
     img = COVER_MAP.get("about")
+    art = Article.objects.get(pk=13)
     return render(requests, 'about.html', locals())
 
 def culturl(requests):
@@ -38,6 +39,7 @@ def culturl(requests):
 def contact(requests):
     spiderInfo = Spider_info.objects.all()[0]
     img = COVER_MAP.get("contact")
+    art = Article.objects.get(pk=14)
     return render(requests, 'contact.html', locals())
 
 
@@ -50,10 +52,13 @@ def article(requests):
         article_id = 1
     img = COVER_MAP.get("article")[article_id-1]
     if article_id == 4:
+        res = Knowledge.objects.filter(country = 1)
         return render(requests, 'australia_knowledge.html', locals())
     if article_id == 5:
+        res = Knowledge.objects.filter(country = 2)
         return render(requests, 'newzeland_knowledge.html', locals())
     if article_id == 6:
+        res = Knowledge.objects.filter(country = 3)
         return render(requests, 'canada_knowledge.html', locals())
 
     art = Article.objects.get(pk=article_id)
@@ -70,8 +75,6 @@ def info_submit(requests):
         if not p.match(phone):
             return HttpResponse("手机格式有误")
         email = requests.POST.get('email')
-        if not email:
-            return HttpResponse("必须输入邮箱")
         comment = requests.POST.get('comment')
         try:
             Info(name=name, phone=phone, email=email, comment=comment).save()

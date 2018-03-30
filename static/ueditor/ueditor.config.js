@@ -410,5 +410,4 @@
     window.UE = {
         getUEBasePath: getUEBasePath
     };
-
 })();

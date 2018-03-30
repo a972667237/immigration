@@ -6,5 +6,8 @@
     var {{ UEditor.id  }} = UE.getEditor('{{ UEditor.id  }}',{{ UEditor.settings|safe }});
      {{ UEditor.id  }}.ready(function(){
          {{ UEditor.bindEvents|safe }}
+     all = window.frames["ueditor_0"].contentDocument.getElementsByTagName("img");
+     for (var i = 0; i < all.length; i++)
+     all[i].src = all[i].src.replace(/http:.+:8000/, "");
      });
 </script>

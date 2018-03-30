@@ -7,94 +7,20 @@
 {% endblock %}
 {% block main %}
     <article>
-        <nav class="panel">
-          <p class="panel-heading">
-              <a href="javascript: void(0)">澳大利亚186雇主担保永居签证</a>
-          </p>
-          <div class="panel-block">
+        {% for p in res %}
+            <nav class="panel">
+                <p class="panel-heading">
+                    <a href="javascript: void(0)">{{ p.title }}</a>
+                </p>
+                 <div class="panel-block">
             <div class="control is-vertical">
-                 澳洲雇主担保签证是澳洲政府为满足当地劳动力市场的人才短缺而设立的、允许澳洲企业担保海外各类专业人士或技术工人来澳工作/定居的一组签证类别。这类签证不需要打分，只要申请人符合基本条件，从事的职业需在澳大利亚提名职业清单表上，又有满足提名和担保条件的雇主愿意担保，就可申请雇主担保签证，并且配偶和子女也能一同来澳洲。
-                <br>
-                186签证是澳大利亚境内企业聘请海外专业人才，并担保申请人全家到澳洲工作和生活的移民签证。186签证需要做职业评估，但不必通过评分系统。
-                <br>
-                <span class="red_span">申请条件（186） ：</span>
-                <br>
-                <div class="condition">
-                    1、学历：大学本科及以上学历
-                    <br>
-                    2、雅思：雅思G类得分单项分不低于6分
-                    <br>
-                    3、经验：申请人需要至少三年以上的相关工作经验
-                    <br>
-                    4、年龄：年龄小于45周岁
-                    <br>
-                    5、申请人需要通过职业技术测评
-                </div>
+                 {% autoescape off %}
+                     {{ p.content }}
+                 {% endautoescape %}
             </div>
           </div>
-        </nav>
-
-    <nav class="panel">
-          <p class="panel-heading">
-              <a href="javascript: void(0)">澳大利亚187偏远地区雇主担保永居签证</a>
-          </p>
-          <div class="panel-block">
-            <div class="control is-vertical">
-                 澳洲雇主担保签证是澳洲政府为满足当地劳动力市场的人才短缺而设立的、允许澳洲企业担保海外各类专业人士或技术工人来澳工作/定居的一组签证类别。这类签证不需要打分，只要申请人符合基本条件，从事的职业需在澳大利亚提名职业清单表上，又有满足提名和担保条件的雇主愿意担保，就可申请雇主担保签证，并且配偶和子女也能一同来澳洲。
-                <br>
-                187偏远地区雇主担保永居签证：187签证是澳大利亚偏远地区企业聘请海外专业人才，并担保申请人全家到澳洲偏远地区工作和生活的签证。
-                <br>
-                <span class="red_span">申请条件（187） ：</span>
-                <br>
-                <div class="condition">
-                    1、本科以上学历
-                <br>
-                    2、年龄小于45周岁
-                <br>
-                    3、身体健康、无犯罪记录
-                <br>
-                    4、符合CSOL职业列表
-                <br>
-                    5、雅思G类6分
-                <br>
-                    6、三年以上相关工作经验
-                </div>
-                <br>
-                <span class="red_span">项目优势：</span>
-                <br>
-                <div class="advantage">
-                    1.一步到位在国内即可获得永居（PR）
-                    <br>
-                    2.可以和澳洲当地居民享有同样的社会福利
-                    <br>
-                    3.无需申请人在国内的商业背景，只需正常工作经历
-                    <br>
-                    4.申请资料简单，免面试
-                    <br>
-                    5.成功率极高
-                </div>
-            </div>
-          </div>
-        </nav>
-
-    <nav class="panel">
-          <p class="panel-heading">
-              <a href="javascript: void(0)">澳洲投资移民</a>
-          </p>
-          <div class="panel-block">
-            <div class="control is-vertical">
-                 澳大利亚商业移民的目的是希望外来投资者将资金投入到澳大利亚的企业，以促进国家的经济繁荣。澳洲投资移民主要针对企业主或者股东推出的移民签证，只要拥有一定的股份，公司营业额达到一定条件，投资一定数量的资金就可以移民澳洲。因此，澳洲投资移民非常受国内企业家欢迎。澳洲投资移民签证的申请人将采取打分制度，计分方式不但会考虑申请人个人及商业的净资产、企业营业额等指标, 更会针对申请人的年龄,学历,英语水平等分别计分,同时会根据一些特定因素进行评分,如经商经营和技术贡献/专利等。申请人必须先符合基本要求，评分超过65分及格线, 通过SkillSelect递交EOI，才有机会获得移民邀请,之后移民局会按照所有申请人的分数排序决定邀请顺序。 条件是否符合评估要求。
-                <br>
-                <span class="red_span">项目种类：</span>
-                <br>
-                <div class="advantage">
-1.澳洲132投资移民（商业天才移民）
-                    <br>
-2.澳洲188A、188B、188C投资移民
-</div>
-            </div>
-          </div>
-        </nav>
+            </nav>
+        {% endfor %}
     </article>
 {% endblock %}
 

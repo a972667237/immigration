@@ -5,13 +5,9 @@
     <link rel="stylesheet" href="/static/css/map.css">
 {% endblock %}
 {% block main %}
-    <p>
-    <strong>新景 大中华区</strong><br><br>
-
-电话：400-619-7935 <br>
-邮箱：newsight@newsightgreaterchina.com
-    </p>
-
+    {% autoescape off %}
+        {{ art.content }}
+    {% endautoescape %}
     <div class="map_place">
         <img src="/static/imgs/map.jpg">
           <div class="point_wrap">
