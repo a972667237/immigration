@@ -5,7 +5,7 @@ from .models import *
 # Create your views here.
 
 COVER_MAP = {
-    "article": ["australia_culture.jpg", "newzeland.jpg", "canada_culture.jpg", "aust.jpg", "newzeland_jianzhen.jpg", "canada.jpg", "culture_more.jpeg", "culture_more.jpeg", "culture_more.jpeg", "australia.jpg", "newzeland.jpg", "canada.jpg"],
+    "article": ["australia_top.jpg", "newzeland.jpg", "canada_culture.jpg", "australia_guide_top.jpg", "newzeland_top.jpg", "canada.jpg", "culture_more.jpeg", "culture_more.jpeg", "culture_more.jpeg", "australia.jpg", "newzeland.jpg", "canada.jpg"],
     "expert": "people.jpeg",
     "culture": "culture_more.jpeg",
     "contact": "contact_more.jpg",
