@@ -22,7 +22,7 @@ header .header_outer{
 }
 
 .video_descript{
-  margin-top: 88px;
+  margin-top: 58px;
   max-width: 41%;
 }
 
@@ -170,7 +170,7 @@ h2{
 .cover_front .cover_front_third .video_descript{
   font-size: 18px;
   padding-left: 48px;
-  padding-top: 32px;
+  padding-top: 5vh;
   color: white;
   font-family: "Microsoft YaHei";
 }
@@ -432,7 +432,7 @@ form .field .label{
     border-right: 37vh solid transparent;
   }
   .video_descript{
-  margin-top: 68px;
+  margin-top: 48px;
   max-width: 41%;
   }
 }
@@ -451,7 +451,7 @@ form .field .label{
     border-right: 32vh solid transparent;
   }
   .video_descript{
-  margin-top: 48px;
+  margin-top: 38px;
   max-width: 41%;
 }
 }
