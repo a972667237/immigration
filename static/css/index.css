@@ -380,8 +380,9 @@ footer .form_outer{
 }
 
 .form_outer p:last-child{
-  font-size: 17px;
-    font-weight: 400;
+	padding-top: 4em;
+  font-size: 22px;
+    font-weight: 600;
     line-height: 1em;
     margin-bottom: 0;
 }
